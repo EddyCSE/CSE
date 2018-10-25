@@ -1,0 +1,5 @@
+No1 = input("(1/10) Noun=")
+No2 = input("(2/10) Adjective=")
+No3 = input("(3/10) PluNoun=")
+No4 = input("(4/10) Verb=")
+print("%s is/are very %s that eats %s and % cellular respiration after eating plants." % (No1, No2, No3, No4))
