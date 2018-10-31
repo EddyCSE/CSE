@@ -55,7 +55,6 @@ real_age = int(input("How old are you again?"))
 hidden_age = real_age + 5
 print("This is your real age: %d" % hidden_age)
 """
-
 """
 This is a multi-line comment
 Anything between the "s is not a run.
@@ -103,3 +102,40 @@ for i in range(5):
     f(i)
 
 # While loops
+a = 1
+while a < 10:
+    print(a)
+    a += 2  # This is the same as saying a = a + 1
+
+
+"""
+At the moment you START the loop:
+For loops - Use when you know EXACTLY how many iterations
+While loops - Use when you DON'T know how many iterations
+"""
+
+# Control Structures (If statements)
+sunny = False
+if sunny:
+    print("Go outside")
+
+
+def grade_calc(percentage):
+    if percentage >= 90:
+        return "A"
+    elif percentage >= 80:
+        return "B"
+    elif percentage >= 70:
+        return "C"
+    elif percentage >= 60:
+        return "D"
+    else:
+        return"F"
+
+
+your_grade = grade_calc(82)
+print(your_grade)
+
+# "Random" Notes
+import random  # This should be on line 1
+print(random.randint(0, 100))
