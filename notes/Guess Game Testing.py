@@ -1,0 +1,17 @@
+Guess2 = input("2st guess=")
+
+
+def random_guess2(guess2):
+    if guess2 == random.randint:
+        return "Correct!"
+    elif guess2 > random.randint:
+        return "Lower"
+    elif guess2 < random.randint:
+        return "Greater"
+
+
+your_2guess = random_guess2
+print(your_2guess)
+
+
+
