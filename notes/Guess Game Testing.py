@@ -15,3 +15,12 @@ print(your_2guess)
 
 
 
+def random_guess1(guess1):
+    if guess1 == random.randint:
+        return "Correct!"
+    elif guess1 > random.randint:
+        return "Lower"
+    elif guess1 < random.randint:
+        return "Greater"
+    else:
+        return "boi"
