@@ -13,3 +13,5 @@ while guesses_taken < 5:
         print("Greater")
     else:
         print("Correct")
+
+print(random.randint)
