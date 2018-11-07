@@ -14,6 +14,5 @@ while guesses_left > 0 and playing:
         print("Greater")
         guesses_left -= 1
     else:
-
         print("Correct!!!")
         playing = False
