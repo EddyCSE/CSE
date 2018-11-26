@@ -150,3 +150,39 @@ print(3 != 4)
 a = 3  # A is set to 3
 a == 3 # Is A equal to 3?
 """
+
+# Creating a list # USE SQUARED BRACKETS
+colors = ["blue", "turquoise", "pink", "orange", "black", "red", "yellow", "green", "white", "brown"]
+print(colors)
+print(colors[0])
+print(colors[1])
+
+# Length of the list
+print("There are %d things in the list." % len(colors))
+
+# Changing Elements in a list
+colors[1] = "purple"
+print(colors)
+
+# Looping through lists
+for blahblahblah in colors:
+    print(blahblahblah)
+
+'''
+1. Make a list with 7 items
+2. Change the 3rd thing in the list
+3. Print the item
+4. Print the full list
+'''
+
+food = ["hamburger", "cupcake", "fries", "cake", "sandwich", "cookie", "rice"]
+food[2] = "french fries"
+print(food[2])
+print(food)
+print("The last thing in the list is %s" % food[len(food) - 1])
+
+# Slicing a list
+print(food[1:3])
+print(food[1:4])
+print(food[1:])
+print(food[:4])
