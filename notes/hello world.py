@@ -175,14 +175,77 @@ for blahblahblah in colors:
 4. Print the full list
 '''
 
-food = ["hamburger", "cupcake", "fries", "cake", "sandwich", "cookie", "rice"]
-food[2] = "french fries"
-print(food[2])
-print(food)
-print("The last thing in the list is %s" % food[len(food) - 1])
+food1 = ["hamburger", "cupcake", "fries", "cake", "sandwich", "cookie", "rice"]
+food1[2] = "french fries"
+print(food1[2])
+print(food1)
+print("The last thing in the list is %s" % food1[len(food1) - 1])
 
 # Slicing a list
-print(food[1:3])
-print(food[1:4])
-print(food[1:])
-print(food[:4])
+print(food1[1:3])
+print(food1[1:4])
+print(food1[1:])
+print(food1[:4])
+
+food2 = ["hamburger", "cupcake", "salad", "cake", "sandwich", "cookie", "rice", "burrito", "sushi", "Chicken", "pizza",
+         "flan", "noodles", "pie", "chips", "fish", "milk", "spaghetti", "soup", "apples"]
+print(len(food2))
+
+# Adding stuff to a list
+food2.append("bacon")
+food2.append("eggs")
+# Notice that everything is object.method(parameters)
+print(food2)
+
+food2.insert(1, "eggo waffles")
+print(food2)
+
+# Remove things from a list
+food2.remove("salad")
+print(food2)
+
+'''
+1. make a new list with 3 items
+2. add a 4th item to the list
+3. remove one of the first 3 items from the list
+'''
+
+states = ["cali", "arizona", "oregon"]
+print(states)
+states.append("Washington")
+states.remove("oregon")
+print(states)
+
+# Tuples
+brands = ("apple", "samsung", "htc")  # Notice the parenthesis, you cannot change a tuple.
+
+# Also removing stuff from a list
+print(food2)
+food2.pop(0)
+print(food2)
+
+# Fine the index of an item
+print(food2.index("Chicken"))
+
+# Changing things into a list
+string1 = "turquoise"
+list1 = list(string1)
+print(list1)
+
+# Hangman hints
+for i in range(len(list1)):  # i goes through all indicies
+    if list1[1] == "u":  # if we find a U
+        list1.pop(1)  # remove the i-th index
+        list1.insert(i, "*")  # put a * there instead
+
+'''
+for character in list1:
+    if character == "u":  
+        # replace with a *
+        current_index = list1.index(character)
+        list1.pop(current_index)
+        list1.insert(current_index, "*")
+'''
+
+# Turn a list into a string
+print("".join(list1))
