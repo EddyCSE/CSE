@@ -224,7 +224,7 @@ print(food2)
 food2.pop(0)
 print(food2)
 
-# Fine the index of an item
+# Find the index of an item
 print(food2.index("Chicken"))
 
 # Changing things into a list
