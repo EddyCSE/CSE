@@ -13,7 +13,8 @@
     <SUITE FILE_PATH="coverage/notes$testing_page.coverage" NAME="testing page Coverage Results" MODIFIED="1543513567527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Fix_it.coverage" NAME="Fix it Coverage Results" MODIFIED="1543602475017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Eduardo_Sanchez___Guess_Game.coverage" NAME="Eduardo Sanchez - Guess Game Coverage Results" MODIFIED="1542130467477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$hello_world.coverage" NAME="hello world Coverage Results" MODIFIED="1543340235838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Challenges___Eduardo_Sanchez.coverage" NAME="Challenges - Eduardo Sanchez Coverage Results" MODIFIED="1543858856037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$hello_world.coverage" NAME="hello world Coverage Results" MODIFIED="1543856526251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Eduardo_Sanchez___Mad_Lib.coverage" NAME="Eduardo Sanchez - Mad Lib Coverage Results" MODIFIED="1540915928110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -38,33 +39,34 @@
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.60" value="1" />
+          <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.63" value="2" />
           <entry key="project.open.time.68" value="1" />
-          <entry key="project.opened" value="24" />
+          <entry key="project.opened" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="2" value="1" />
-          <entry key="py" value="17" />
+          <entry key="py" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="18" />
+          <entry key="Python" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="2" value="47" />
           <entry key="dummy" value="14" />
-          <entry key="py" value="8533" />
+          <entry key="py" value="9218" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="14" />
-          <entry key="Python" value="8580" />
+          <entry key="Python" value="9265" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -76,22 +78,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hello world.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2051">
-              <caret line="235" column="56" selection-start-line="235" selection-start-column="56" selection-end-line="235" selection-end-column="56" />
+            <state relative-caret-position="206">
+              <caret line="252" column="16" selection-start-line="252" selection-start-column="16" selection-end-line="252" selection-end-column="16" />
               <folding>
-                <marker date="1543511831438" expanded="true" signature="1353:1354" ph="..." />
-                <marker date="1543511831438" expanded="true" signature="1353:1358" ph="..." />
-                <marker date="1543511831438" expanded="true" signature="2157:2162" ph="..." />
+                <marker date="1543856526095" expanded="true" signature="1353:1354" ph="..." />
+                <marker date="1543856526095" expanded="true" signature="1353:1358" ph="..." />
+                <marker date="1543856526095" expanded="true" signature="2157:2162" ph="..." />
+                <marker date="1543856526095" expanded="true" signature="5037:5097" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Challenges - Eduardo Sanchez.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+              <folding>
+                <marker date="1543859070654" expanded="true" signature="91:94" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Fix it.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+            <state relative-caret-position="221">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -134,10 +149,11 @@
         <option value="$PROJECT_DIR$/Eduardo Sanchez - Guess Game.py" />
         <option value="$PROJECT_DIR$/Eduardo Sanchez - Lucky 7s.py" />
         <option value="$PROJECT_DIR$/Eduardo Sanchez - Hangman.py" />
-        <option value="$PROJECT_DIR$/hello world.py" />
         <option value="$PROJECT_DIR$/Eduardo Sanchez - Mad Lib pt.2" />
         <option value="$PROJECT_DIR$/testing page.py" />
         <option value="$PROJECT_DIR$/Fix it.py" />
+        <option value="$PROJECT_DIR$/hello world.py" />
+        <option value="$PROJECT_DIR$/Challenges - Eduardo Sanchez.py" />
       </list>
     </option>
   </component>
@@ -158,6 +174,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -169,7 +186,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -196,8 +212,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Fix it">
-    <configuration name="Eduardo Sanchez - Guess Game" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Challenges - Eduardo Sanchez">
+    <configuration name="Challenges - Eduardo Sanchez" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -210,7 +226,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eduardo Sanchez - Guess Game.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Challenges - Eduardo Sanchez.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -309,18 +325,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.hello world" />
-      <item itemvalue="Python.Eduardo Sanchez - Guess Game" />
       <item itemvalue="Python.Eduardo Sanchez - Lucky 7s" />
       <item itemvalue="Python.testing page" />
       <item itemvalue="Python.Fix it" />
+      <item itemvalue="Python.Challenges - Eduardo Sanchez" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Challenges - Eduardo Sanchez" />
+        <item itemvalue="Python.hello world" />
         <item itemvalue="Python.Fix it" />
         <item itemvalue="Python.testing page" />
-        <item itemvalue="Python.hello world" />
         <item itemvalue="Python.Eduardo Sanchez - Lucky 7s" />
-        <item itemvalue="Python.Eduardo Sanchez - Guess Game" />
       </list>
     </recent_temporary>
   </component>
@@ -348,13 +364,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21331316" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21633889" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -431,13 +448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - Mad Lib pt.2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - Hangman.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -452,22 +462,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello world.py">
+    <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - Mad Lib pt.2">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2051">
-          <caret line="235" column="56" selection-start-line="235" selection-start-column="56" selection-end-line="235" selection-end-column="56" />
-          <folding>
-            <marker date="1543511831438" expanded="true" signature="1353:1354" ph="..." />
-            <marker date="1543511831438" expanded="true" signature="1353:1358" ph="..." />
-            <marker date="1543511831438" expanded="true" signature="2157:2162" ph="..." />
-          </folding>
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Fix it.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello world.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="252" column="16" selection-start-line="252" selection-start-column="16" selection-end-line="252" selection-end-column="16" />
+          <folding>
+            <marker date="1543856526095" expanded="true" signature="1353:1354" ph="..." />
+            <marker date="1543856526095" expanded="true" signature="1353:1358" ph="..." />
+            <marker date="1543856526095" expanded="true" signature="2157:2162" ph="..." />
+            <marker date="1543856526095" expanded="true" signature="5037:5097" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Challenges - Eduardo Sanchez.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding>
+            <marker date="1543859070654" expanded="true" signature="91:94" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
