@@ -14,7 +14,7 @@ challenge1("Eduardo", "Sanchez")
 def challenge2(random_number):
     if random_number // 2:
         print("even number")
-    else: 
+    else:
         print("odd number")
 
 
