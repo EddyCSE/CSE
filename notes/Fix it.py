@@ -10,9 +10,9 @@ print("So, you're %s old, %s tall and %s heavy." % (age, height, weight))
 
 print("Let's practice everything.")
 print("You'd need to know 'bout escapes")
-with "that do newlines and tabs":
+print("with \\ that do \n newlines and \t tabs.")
 
-    poem = " The lovely world " \
+poem = " The lovely world " \
        " with logic so firmly planted" \
        " cannot discern the needs of love" \
        " nor comprehend passion from intuition" \
@@ -29,9 +29,9 @@ print("This should be five: %s" % five)
 
 
 def secret_formula(started):
-    if jelly_beans == started * 500:
-        jars == jelly_beans / 1000
-        crates == jars / 100
+    jelly_beans = started * 500
+    jars = jelly_beans / 1000
+    crates = jars * 100
     return jelly_beans, jars, crates
 
 
@@ -41,7 +41,7 @@ jelly_beans, jars, crates = secret_formula(start_point)
 # remember that this is another way to format a string
 print("With a starting point of: %d" % start_point)
 # it's just like with an f"" string
-print("We'd have {beans} beans, {jars} jars, and {crates} crates.")
+print("We'd have %d beans, %d jars, and %d crates." % (jelly_beans, jars, crates))
 
 start_point = start_point / 10
 
@@ -58,7 +58,7 @@ dogs = 15
 if people < cats:
     print("Too many cats! The world is doomed!")
 
-if people < cats:
+if people > cats:
     print("Not many cats! The world is saved!")
 
 if people < dogs:
