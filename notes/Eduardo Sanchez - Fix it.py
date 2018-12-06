@@ -10,7 +10,7 @@ print("So, you're %s old, %s tall and %s heavy." % (age, height, weight))
 
 print("Let's practice everything.")
 print("You'd need to know 'bout escapes")
-print("with \\ that do \n newlines and \t tabs.")
+print("with that do newlines and tabs.")
 
 poem = " The lovely world " \
        " with logic so firmly planted" \
