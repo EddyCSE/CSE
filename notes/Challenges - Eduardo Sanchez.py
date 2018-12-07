@@ -31,3 +31,18 @@ print(challenge5(10))
 # Challenge 6
 
 
+def challenge6(r):
+    return (4/3 * 3.14) * r ** 3
+
+
+print(challenge6(3))
+
+
+# Challenge 8
+
+
+def challenge7(n):
+    return n + (n*n) + (n*n*n)
+
+
+print(challenge7(10))
