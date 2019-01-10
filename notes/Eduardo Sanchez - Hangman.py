@@ -1,1 +1,2 @@
-word = ('dog', 'computer', 'mouse', 'chair', 'shirt', 'legs', 'cat', 'soccer', 'sweater', 'goldfish', 'human', )
+word = ["thigh", "computer", "mouse", "chair", "shirt", "o'clock", "concatenation", "pajama", "soccer", "sweater",
+        "goldfish", "human", "haphazard", "wildebeest", "pixel", "Wiebe"]
