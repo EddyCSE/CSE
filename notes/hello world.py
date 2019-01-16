@@ -1,4 +1,4 @@
-"""
+import random
 print("hello world")
 
 # This is a comment. This has no effect on the code
@@ -54,14 +54,11 @@ print("I have a car called %s. It is a %s." % (car_name, car_type))
 real_age = int(input("How old are you again?"))
 hidden_age = real_age + 5
 print("This is your real age: %d" % hidden_age)
-"""
-"""
-This is a multi-line comment
-Anything between the "s is not a run.
-"""
 
-
+# (''' ''') <-- That is a multi-line comment. Anything between the "s is not a run.#
 # Functions
+
+
 def say_it():
     print("Hello World!")
 
@@ -137,7 +134,7 @@ your_grade = grade_calc(82)
 print(your_grade)
 
 # "Random" Notes
-import random  # This should be on line 1
+# import random <-- This should be on line 1
 print(random.randint(0, 100))
 
 
