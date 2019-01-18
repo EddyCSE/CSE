@@ -9,12 +9,15 @@ words = ["thigh", "computer", "mouse", "chair", "shirt", "o'clock", "concatenati
 print("Guess out my word...")
 randword = (random.choice(words))
 wordlist = []
+output = randword
 wordlist = list(randword)
 length = len(randword)
 
-
-output = len(list(randword))
 print(output)
+print(randword)
+print(wordlist)
 
+for i in range(length):
+    randword = wordlist.append = "*"
 
-
+print(wordlist)
