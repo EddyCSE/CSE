@@ -19,12 +19,12 @@ print("".join(output))
 
 # Takes the guess and checks it in the word list
 # The "\n" is a full line space
-while guesses > 0 and len(wordlist) > 0:
+while guesses > 0 and length > 0:
     guess = input("Guess out my word, letter = ")
     print("\n" * 20)
     if guess in randword:
         print("Nice, that's a letter.")
-        print("/s guesses" % guesses)
+        print(guesses)
         for i in range(len(randword)):
             if guess in wordlist:
                 wordlist.pop(i)
@@ -33,6 +33,10 @@ while guesses > 0 and len(wordlist) > 0:
                 output.pop(i)
                 output.insert(i, guess)
         print("".join(output))
+        if length == 0:
+            print("\n" * 10)
+            print("Congrats, you won!")
+            print("The word was %s" % randword)
     else:
         print("Wrong, guess again.")
         guesses = (guesses - 1)
@@ -41,7 +45,7 @@ while guesses > 0 and len(wordlist) > 0:
     if guesses <= 0:
         print("\n" * 10)
         print("You ran out of guesses, you failed, he's dead, shame on you")
-    if len(wordlist) == 0:
+    if length == 0:
         print("\n" * 10)
         print("Congrats, you won!")
         print("The word was %s" % randword)
