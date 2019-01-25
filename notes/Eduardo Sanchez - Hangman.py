@@ -16,24 +16,27 @@ length = len(randword)
 for i in range(length):
     output.append("_ ")
 print("".join(output))
+print(randword)
 
 # Takes the guess and checks it in the word list
 # The "\n" is a full line space
+
 while guesses > 0 and length > 0:
     guess = input("Guess out my word, letter = ")
     print("\n" * 20)
     if guess in randword:
         print("Nice, that's a letter.")
         print(guesses)
-        for i in range(len(randword)):
+        for i in range(length):  # Testing lines from this one
             if guess in wordlist:
                 wordlist.pop(i)
-        for i in range(len(randword)):
+                wordlist.insert(i)
+        for i in range(length):
             if randword[i] == guess:
                 output.pop(i)
-                output.insert(i, guess)
+                output.insert(i, guess)  # To this one
         print("".join(output))
-        if length == 0:
+        if wordlist == 0:  # Checks if you won
             print("\n" * 10)
             print("Congrats, you won!")
             print("The word was %s" % randword)
@@ -45,7 +48,12 @@ while guesses > 0 and length > 0:
     if guesses <= 0:
         print("\n" * 10)
         print("You ran out of guesses, you failed, he's dead, shame on you")
-    if length == 0:
+    if len(wordlist) == 0:  # Checks if you won
         print("\n" * 10)
         print("Congrats, you won!")
         print("The word was %s" % randword)
+
+print(wordlist)
+print(randword)
+print(length)
+print(output)
