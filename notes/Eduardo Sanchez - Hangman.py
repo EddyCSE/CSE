@@ -17,7 +17,6 @@ print("".join(output))
 for i in range(length):
     output.append("_ ")
 print("".join(output))
-print(randword)
 
 # Takes the guess and checks it in the word list
 # The "\n" is a full line space
@@ -54,6 +53,3 @@ while guesses > 0 and len(wordlist) > 0:
             print("Congrats, you won!")
             print("The word was %s" % randword)
             # quit()
-
-print(wordlist)
-print(output)
