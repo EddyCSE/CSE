@@ -1,7 +1,7 @@
 world_map = {
-    'R19A': {
-        'NAME': "Mr. Wiebe's Room",
-        'DESCRIPTION': "This is the classroom you are in right now. "
+    'YOUR_CELL': {
+        'NAME': "Your Cell",
+        'DESCRIPTION': ". "
                        "There are two doors on the north wall",
         'PATHS': {
             'NORTH': "PARKING_LOT"
