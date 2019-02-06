@@ -50,3 +50,14 @@ except KeyError:
 
         else:
             print("Command Not Found")
+
+'': {
+        'NAME': "",
+        'DESCRIPTION': "",
+        'PATHS': {
+            'NORTH': "",
+            'EAST': "",
+            'SOUTH': "",
+            'WEST': ""
+        }
+    },
