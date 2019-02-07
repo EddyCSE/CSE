@@ -1,31 +1,40 @@
 world_map = {
+    'UNKNOWN_CELL': {
+        'NAME': "- /= --uNkNown cEll- /=-",
+        'DESCRIPTION': "You managed to get in and there's an escape hole",
+        'PATHS': {
+            'NORTH': "OUT",
+            'SOUTH': "HALLWAY2",
+        }
+    },
     'YOUR_CELL': {
-        'NAME': "Your Cell",
-        'DESCRIPTION': "An abandoned cell... you don't know how you got here, but you need to escape."
+        'NAME': "-Your Cell-",
+        'DESCRIPTION': "An abandoned cell... you don't know how you got here, but you need to escape. "
                        "Your cell door is on the north wall.",
         'PATHS': {
             'NORTH': "HALLWAY1"
         }
     },
     'HALLWAY1': {
-        'NAME': "Hallway",
+        'NAME': "-East Hallway-",
         'DESCRIPTION': "There is a long hallway, breezes coming left and right with a door north of you.",
         'PATHS': {
             'NORTH': "SHOWER_ROOM",
-            'EAST': "SECURITY_ROOM",
-            'WEST': "HALLWAY2"
+            'EAST': "SECURITY_ROOM2",
+            'WEST': "HALLWAY2",
+            'SOUTH': "YOUR_CELL",
         }
     },
     'SHOWER_ROOM': {
-        'NAME': "Shower Room",
+        'NAME': "-Shower Room-",
         'DESCRIPTION': "A shower room, none of the water is working.",
         'PATHS': {
             'SOUTH': "HALLWAY1",
         }
     },
     'HALLWAY2': {
-        'NAME': "Hallway",
-        'DESCRIPTION': "There is a long hallway, there's more cells north and south of you."
+        'NAME': "-West Hallway-",
+        'DESCRIPTION': "There is a long hallway, there's more cells north and south of you. "
                        "IT looks like there were stairs, but it's all destroyed",
         'PATHS': {
             # 'NORTH': "Locked Cell",
@@ -34,25 +43,17 @@ world_map = {
             'WEST': "SECURITY_ROOM"
         }
     },
-    'WOMENS_CELL': {
-        'NAME': "Women's Cell",
+    '-WOMENS_CELL-': {
+        'NAME': "-Women's Cell-",
         'DESCRIPTION': "A cell with nothing or no one in here...",
         'PATHS': {
             'NORTH': "HALLWAY2",
         }
     },
-    'UNKNOWN_CELL': {
-        'NAME': "Unknown Cell",
-        'DESCRIPTION': "You managed to get in and there's an escape hole",
-        'PATHS': {
-            'NORTH': "OUT",
-            'SOUTH': "HALLWAY2",
-        }
-    },
     'SECURITY_ROOM': {
-        'NAME': "Security Room",
-        'DESCRIPTION': "Seems like nothing works in here."
-                       "Doors on the north, south, ans west.",
+        'NAME': "-Security Office-",
+        'DESCRIPTION': "Seems like nothing works in here. "
+                       "Doors on the north, south, and west.",
         'PATHS': {
             'NORTH': "WARDENS_OFFICE",
             'EAST': "HALLWAY2",
@@ -61,26 +62,84 @@ world_map = {
         }
     },
     'NURSERY': {
-        'NAME': "Nursery",
+        'NAME': "-Nursery-",
         'DESCRIPTION': "The area the nurse would be, kinda scary like always.",
         'PATHS': {
             'NORTH': "SECURITY_ROOM",
         }
     },
     'WARDENS_OFFICE': {
-        'NAME': "Warden's Office",
+        'NAME': "-Warden's Office-",
         'DESCRIPTION': "The Warden's room, spoopy.",
         'PATHS': {
             'SOUTH': "SECURITY ROOM",
         }
     },
-
+    'ENTRANCE': {
+        'NAME': "-Entrance-",
+        'DESCRIPTION': "The exit/entrance, it's all boarded up, can't seem to ever get through.",
+        'PATHS': {
+            'EAST': "SECURITY_ROOM",
+        }
+    },
+    'SECURITY_ROOM2': {
+        'NAME': "-Security Room-",
+        'DESCRIPTION': "A contraband area, nothing is working. "
+                       "A cafeteria is seen east.",
+        'PATHS': {
+            'EAST': "CAFETERIA",
+            'WEST': "HALLWAY1"
+        }
+    },
+    'CAFETERIA': {
+        'NAME': "-Cafeteria-",
+        'DESCRIPTION': "Lots of spoiled food is here. "
+                       "Open areas north, east, and south.",
+        'PATHS': {
+            'NORTH': "COURT_YARD",
+            'EAST': "KITCHEN",
+            'SOUTH': "LIBRARY",
+            'WEST': "SECURITY_ROOM2"
+        }
+    },
+    'COURT_YARD': {
+        'NAME': "-The Court Yard-",
+        'DESCRIPTION': "Basketball, weights, and barbed wire located here.",
+        'PATHS': {
+            'SOUTH': "CAFETERIA",
+        }
+    },
+    'KITCHEN': {
+        'NAME': "-The Kitchen-",
+        'DESCRIPTION': "Utensils here and a horrible smell.",
+        'PATHS': {
+            'WEST': "CAFETERIA"
+        }
+    },
+    'LIBRARY': {
+        'NAME': "-The Library-",
+        'DESCRIPTION': "Books and 'knowledge here. "
+                       "One of the books have been written on it. "
+                       "It reads 'Open the locked cell...' ",
+        'PATHS': {
+            'NORTH': "CAFETERIA",
+            'WEST': "PHONE_ROOM"
+        }
+    },
+    'PHONE_ROOM': {
+        'NAME': "-The Phone Room-",
+        'DESCRIPTION': "This is where you call your family, none of the phones are working. :/",
+        'PATHS': {
+            'EAST': "LIBRARY",
+        }
+    },
 }
 
 # Controller   node = area
 playing = True
-current_node = world_map['R19A']
-directions = ['NORTH', 'SOUTH', 'EAST', 'WEST', 'UP', 'DOWN']
+current_node = world_map['YOUR_CELL']
+directions = ['NORTH', 'SOUTH', 'EAST', 'WEST']
+# actions = ['PICK UP']
 
 while playing:
     print(current_node['NAME'])
