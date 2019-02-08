@@ -7,12 +7,20 @@ world_map = {
             'SOUTH': "HALLWAY2",
         }
     },
+    'OUT': {
+        'NAME': "-=-OUT-=-",
+        'DESCRIPTION': "You've made it out through skill and intelligence. "
+                       "You now just need to find civilization and get your way back home. "
+                       "Congrats, you beat the game. ",
+        'PATHS': {
+        }
+    },
     'YOUR_CELL': {
         'NAME': "-Your Cell-",
         'DESCRIPTION': "An abandoned cell... you don't know how you got here, but you need to escape. "
                        "Your cell door is on the north wall.",
         'PATHS': {
-            'NORTH': "HALLWAY1"
+            'NORTH': "HALLWAY1",
         }
     },
     'HALLWAY1': {
@@ -37,13 +45,13 @@ world_map = {
         'DESCRIPTION': "There is a long hallway, there's more cells north and south of you. "
                        "IT looks like there were stairs, but it's all destroyed",
         'PATHS': {
-            # 'NORTH': "Locked Cell",
+            'NORTH': "UNKNOWN_CELL",
             'EAST': "HALLWAY1",
             'SOUTH': "WOMENS_CELL",
             'WEST': "SECURITY_ROOM"
         }
     },
-    '-WOMENS_CELL-': {
+    'WOMENS_CELL': {
         'NAME': "-Women's Cell-",
         'DESCRIPTION': "A cell with nothing or no one in here...",
         'PATHS': {
@@ -51,7 +59,7 @@ world_map = {
         }
     },
     'SECURITY_ROOM': {
-        'NAME': "-Security Office-",
+        'NAME': "-West Security Office-",
         'DESCRIPTION': "Seems like nothing works in here. "
                        "Doors on the north, south, and west.",
         'PATHS': {
@@ -72,7 +80,7 @@ world_map = {
         'NAME': "-Warden's Office-",
         'DESCRIPTION': "The Warden's room, spoopy.",
         'PATHS': {
-            'SOUTH': "SECURITY ROOM",
+            'SOUTH': "SECURITY_ROOM",
         }
     },
     'ENTRANCE': {
@@ -83,7 +91,7 @@ world_map = {
         }
     },
     'SECURITY_ROOM2': {
-        'NAME': "-Security Room-",
+        'NAME': "-East Security Room-",
         'DESCRIPTION': "A contraband area, nothing is working. "
                        "A cafeteria is seen east.",
         'PATHS': {
@@ -139,7 +147,8 @@ world_map = {
 playing = True
 current_node = world_map['YOUR_CELL']
 directions = ['NORTH', 'SOUTH', 'EAST', 'WEST']
-# actions = ['PICK UP']
+actions = ['PICK UP']
+items = []
 
 while playing:
     print(current_node['NAME'])
