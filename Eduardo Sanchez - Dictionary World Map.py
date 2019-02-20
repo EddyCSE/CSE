@@ -29,8 +29,8 @@ world_map = {
         'PATHS': {
             'NORTH': "SHOWER_ROOM",
             'EAST': "SECURITY_ROOM2",
-            'WEST': "HALLWAY2",
             'SOUTH': "YOUR_CELL",
+            'WEST': "HALLWAY2",
         }
     },
     'SHOWER_ROOM': {

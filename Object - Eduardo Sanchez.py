@@ -82,3 +82,4 @@ class Balloon(object):
 my_balloon = Balloon()
 
 my_balloon.fill_with_air()
+my_balloon.shine_balloon()
