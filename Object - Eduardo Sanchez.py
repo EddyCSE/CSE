@@ -11,6 +11,9 @@ class Balloon(object):
         if self.hole:
             print("You can't, it's broken.")
             return
+        if not self.obtained:  # False
+            print("You can't you don't have a balloon.")
+            return
         if self.water_filled:
             print("It has already been done.")
         if self.air_filled:
@@ -25,6 +28,9 @@ class Balloon(object):
         if self.hole:
             print("You can't, it's broken.")
             return
+        if not self.obtained:  # False
+            print("You can't you don't have a balloon.")
+            return
         if self.water_filled:
             print("You can't do that")
         if self.air_filled:
@@ -36,6 +42,9 @@ class Balloon(object):
     def let_go(self):
         if self.hole:
             print("You can't, it's broken.")
+            return
+        if not self.obtained:  # False
+            print("You can't you don't have a balloon.")
             return
         if self.normal:
             print("It dropped to the floor.")
@@ -55,6 +64,9 @@ class Balloon(object):
         if self.hole:
             print("You can't, it's broken.")
             return
+        if not self.obtained:  # False
+            print("You can't you don't have a balloon.")
+            return
         if self.normal:
             print("It flew to the floor.")
             self.obtained = False
@@ -73,6 +85,9 @@ class Balloon(object):
         if self.hole:
             print("You can't, it's broken.")
             return
+        if not self.obtained:  # False
+            print("You can't you don't have a balloon.")
+            return
         if self.shiny:
             print("You squeaked the balloon... great.")
             self.shiny = False
@@ -89,6 +104,9 @@ class Balloon(object):
     def shine_balloon(self):
         if self.hole:
             print("You can't, it's broken.")
+            return
+        if not self.obtained:  # False
+            print("You can't you don't have a balloon.")
             return
         if not self.shiny:  # False
             print("You shined it.")
@@ -110,3 +128,5 @@ my_balloon.throw()
 my_balloon.get_new_balloon()
 my_balloon.fill_with_water()
 my_balloon.let_go()
+my_balloon.fill_with_water()
+
