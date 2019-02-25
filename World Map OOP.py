@@ -7,18 +7,9 @@ class Room(object):
         self.west = west
 
 
-# Option 1 - Define as we go
-R19A = Room("Mr.Wiebe's Room")
-parking_lot = Room("Parking Lot", None, R19A)
-R19A.north = parking_lot
-
-# Option 2 - Set all at once, modify controller
-R19A = Room("Mr.Wiebe's Room", "parking_lot")
-parking_lot = Room("Parking Lot", None, "R19A")
-
+OUT = Room("-=-OUT-=-", None, None, None, None)  # <-- Exit Room
+YOUR_CELL = Room("-Your Cell-", "HALLWAY1", None, None, None)  # <-- Starting Room
 UNKNOWN_CELL = Room("- /= --uNkNown cEll- /=-", "OUT", None, "HALLWAY2", None)
-OUT = Room("-=-OUT-=-", None, None, None)
-YOUR_CELL = Room("-Your Cell-", "HALLWAY1", None, None)
 HALLWAY1 = Room("-East Hallway-", "SHOWER_ROOM", "SECURITY_ROOM2", "YOUR_CELL", "HALLWAY2")
 SHOWER_ROOM = Room("-Shower Room-", None, None, "HALLWAY1", None)
 HALLWAY2 = Room("-West Hallway-", "UNKNOWN_CELL", "HALLWAY1", "WOMENS_CELL", "SECURITY_ROOM")
