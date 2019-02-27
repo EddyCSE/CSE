@@ -29,29 +29,49 @@ class Player(object):
         name_of_room = getattr(self.current_location, direction)
         return globals()[name_of_room]
 
+class 
+
 
 OUT = Room("-=-OUT-=-", None, None, None, None, "You've made it out through skill and intelligence."
                                                 " You now just need to find civilization and get your way back home. "
                                                 "Congrats, you beat the game. ")  # <-- Exit Room
 YOUR_CELL = Room("-Your Cell-", "HALLWAY1", None, None, None, "An abandoned cell... you don't know how you got here,"
-                                                              "but you need to escape."
+                                                              " but you need to escape."
                                                               "Your cell door is on the north wall.")  # <-- Start Room
 UNKNOWN_CELL = Room("- /= --uNkNown cEll- /=-", "OUT", None, "HALLWAY2", None, "You managed to get in and there's an "
                                                                                "escape hole")
-HALLWAY1 = Room("-East Hallway-", "SHOWER_ROOM", "SECURITY_ROOM2", "YOUR_CELL", "HALLWAY2")
-SHOWER_ROOM = Room("-Shower Room-", None, None, "HALLWAY1", None)
-HALLWAY2 = Room("-West Hallway-", "UNKNOWN_CELL", "HALLWAY1", "WOMENS_CELL", "SECURITY_ROOM")
-WOMENS_CELL = Room("-Women's Cell", "HALLWAY2", None, None, None)
-SECURITY_ROOM = Room("-West Security Office-", "WARDENS_OFFICE", "HALLWAY2", "NURSERY", "ENTRANCE")
-NURSERY = Room("-Nursery-", "SECURITY_ROOM", None, None, None)
-WARDENS_OFFICE = Room("-Warden's Office-", None, None, "SECURITY_ROOM", None)
-ENTRANCE = Room("-Entrance-", None, "SECURITY_ROOM", None, None)
-SECURITY_ROOM2 = Room("-East Security Room-", None, "CAFETERIA", None, "HALLWAY1")
-CAFETERIA = Room("-Cafeteria-", "COURT_YARD", "KITCHEN", "LIBRARY", "SECURITY_ROOM2")
-COURT_YARD = Room("-Court Yard-", None, None, "CAFETERIA", None)
-KITCHEN = Room("-Kitchen-", None, None, None, "CAFETERIA")
-LIBRARY = Room("-Library-", "CAFETERIA", None, None, "PHONE_ROOM")
-PHONE_ROOM = Room("-Phone Room-", None, "LIBRARY", None, None)
+HALLWAY1 = Room("-East Hallway-", "SHOWER_ROOM", "SECURITY_ROOM2", "YOUR_CELL", "HALLWAY2", "There is a long hallway,"
+                                                                                            " breezes coming left and "
+                                                                                            "right with a door north "
+                                                                                            "of you.")
+SHOWER_ROOM = Room("-Shower Room-", None, None, "HALLWAY1", None, "A shower room, none of the water is working.")
+HALLWAY2 = Room("-West Hallway-", "UNKNOWN_CELL", "HALLWAY1", "WOMENS_CELL", "SECURITY_ROOM", "There is a long hallway,"
+                                                                                              " there's more cells "
+                                                                                              "north and south of you. "
+                                                                                              "It looks like there "
+                                                                                              "were stairs, but it's"
+                                                                                              " all destroyed")
+WOMENS_CELL = Room("-Women's Cell", "HALLWAY2", None, None, None, "A cell with nothing or no one in here...")
+SECURITY_ROOM = Room("-West Security Office-", "WARDENS_OFFICE", "HALLWAY2", "NURSERY", "ENTRANCE", "Seems like nothing"
+                                                                                                    " works in here. "
+                                                                                                    "Doors north, "
+                                                                                                    "south, and west.")
+NURSERY = Room("-Nursery-", "SECURITY_ROOM", None, None, None, "The area the nurse would be, kinda scary like always.")
+WARDENS_OFFICE = Room("-Warden's Office-", None, None, "SECURITY_ROOM", None, "The Warden's room, spoopy.")
+ENTRANCE = Room("-Entrance-", None, "SECURITY_ROOM", None, None, "The exit/entrance, it's all boarded up, can't"
+                                                                 " seem to ever get through.")
+SECURITY_ROOM2 = Room("-East Security Room-", None, "CAFETERIA", None, "HALLWAY1", "A contraband area, nothing is "
+                                                                                   "working. A cafeteria is seen east.")
+CAFETERIA = Room("-Cafeteria-", "COURT_YARD", "KITCHEN", "LIBRARY", "SECURITY_ROOM2", "Lots of spoiled food is here. "
+                                                                                      "Open areas north, east,"
+                                                                                      " and south.")
+COURT_YARD = Room("-Court Yard-", None, None, "CAFETERIA", None, "Basketball, weights, and barbed wire located here.")
+KITCHEN = Room("-Kitchen-", None, None, None, "CAFETERIA", "Utensils here and a horrible smell.")
+LIBRARY = Room("-Library-", "CAFETERIA", None, None, "PHONE_ROOM", "Books and 'knowledge here. One of the books have "
+                                                                   "been written on it. It reads 'Open the locked"
+                                                                   " cell...' ")
+PHONE_ROOM = Room("-Phone Room-", None, "LIBRARY", None, None, "This is where you call your family, "
+                                                               "none of the phones are working. :/")
 
 player = Player(YOUR_CELL)
 
