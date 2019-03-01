@@ -29,9 +29,6 @@ class Player(object):
         name_of_room = getattr(self.current_location, direction)
         return globals()[name_of_room]
 
-class Demon(object):
-    def __init__(self):
-        self.
 
 OUT = Room("-=-OUT-=-", None, None, None, None, "You've made it out through skill and intelligence."
                                                 " You now just need to find civilization and get your way back home. "

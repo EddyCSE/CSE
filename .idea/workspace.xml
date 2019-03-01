@@ -63,130 +63,139 @@
           <entry key="project.open.time.75" value="1" />
           <entry key="project.open.time.79" value="2" />
           <entry key="project.open.time.81" value="1" />
-          <entry key="project.open.time.82" value="1" />
+          <entry key="project.open.time.82" value="2" />
           <entry key="project.open.time.85" value="1" />
-          <entry key="project.opened" value="37" />
+          <entry key="project.opened" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="23" />
+          <entry key="py" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="23" />
+          <entry key="Python" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Eduardo Sanchez - Dictionary World Map" value="2" />
-          <entry key="dummy" value="6" />
-          <entry key="py" value="15791" />
+          <entry key="dummy" value="26" />
+          <entry key="py" value="15837" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="8" />
-          <entry key="Python" value="15791" />
+          <entry key="PLAIN_TEXT" value="28" />
+          <entry key="Python" value="15837" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Semester 2 Notes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2210">
-              <caret line="130" selection-start-line="130" selection-end-line="130" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Object Notes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-              <folding>
-                <marker date="1550252022169" expanded="true" signature="44:49" ph="..." />
-                <marker date="1550252022169" expanded="true" signature="384:388" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - Dictionary World Map.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="136" column="19" selection-start-line="136" selection-start-column="19" selection-end-line="136" selection-end-column="19" />
-              <folding>
-                <element signature="e#34#250#0" />
-                <element signature="e#172#244#0" />
-                <element signature="e#263#554#0" />
-                <element signature="e#573#840#0" />
-                <element signature="e#858#1175#0" />
-                <element signature="e#1196#1369#0" />
-                <element signature="e#1387#1774#0" />
-                <element signature="e#1795#1965#0" />
-                <element signature="e#1988#2323#0" />
-                <element signature="e#2340#2523#0" />
-                <element signature="e#2547#2711#0" />
-                <element signature="e#2729#2930#0" />
-                <element signature="e#2954#3211#0" />
-                <element signature="e#3230#3549#0" />
-                <element signature="e#3569#3752#0" />
-                <element signature="e#3769#3932#0" />
-                <element signature="e#3949#4268#0" />
-                <element signature="e#4288#4488#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/World Map OOP.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-              <folding>
-                <element signature="e#1137#1388#0" />
-                <element signature="e#1469#1714#0" />
-                <element signature="e#1813#1945#0" />
-                <element signature="e#2039#2406#0" />
-                <element signature="e#2616#3226#0" />
-                <element signature="e#3438#3812#0" />
-                <element signature="e#4107#4248#0" />
-                <element signature="e#4333#4485#0" />
-                <element signature="e#4573#4817#0" />
-                <element signature="e#5103#5349#0" />
-                <element signature="e#5414#5552#0" />
-                <marker date="1551289543390" expanded="true" signature="19:24" ph="..." />
-                <marker date="1551289543390" expanded="true" signature="1049:1089" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Inheritance.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
-              <folding>
-                <marker date="1551375867329" expanded="true" signature="22:27" ph="..." />
-                <marker date="1551375867329" expanded="true" signature="99:104" ph="..." />
-                <marker date="1551375867329" expanded="true" signature="673:751" ph="..." />
-                <marker date="1551375867329" expanded="true" signature="865:870" ph="..." />
-                <marker date="1551375867329" expanded="true" signature="1012:1183" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.37443268">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - Dictionary World Map.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                  <caret line="92" column="16" lean-forward="true" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
+                  <folding>
+                    <element signature="e#34#250#0" />
+                    <element signature="e#172#244#0" />
+                    <element signature="e#263#554#0" />
+                    <element signature="e#573#840#0" />
+                    <element signature="e#858#1175#0" />
+                    <element signature="e#1196#1369#0" />
+                    <element signature="e#1387#1774#0" />
+                    <element signature="e#1795#1965#0" />
+                    <element signature="e#1988#2323#0" />
+                    <element signature="e#2340#2523#0" />
+                    <element signature="e#2547#2711#0" />
+                    <element signature="e#2729#2930#0" />
+                    <element signature="e#2954#3211#0" />
+                    <element signature="e#3230#3549#0" />
+                    <element signature="e#3569#3752#0" />
+                    <element signature="e#3769#3932#0" />
+                    <element signature="e#3949#4268#0" />
+                    <element signature="e#4288#4488#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - World Map OOP.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="174">
+                  <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+                  <folding>
+                    <element signature="e#1137#1388#0" />
+                    <element signature="e#1469#1714#0" />
+                    <element signature="e#1813#1945#0" />
+                    <element signature="e#2039#2406#0" />
+                    <element signature="e#2616#3226#0" />
+                    <element signature="e#3438#3812#0" />
+                    <element signature="e#4107#4248#0" />
+                    <element signature="e#4333#4485#0" />
+                    <element signature="e#4573#4817#0" />
+                    <element signature="e#5103#5349#0" />
+                    <element signature="e#5414#5552#0" />
+                    <marker date="1551464352847" expanded="true" signature="19:24" ph="..." />
+                    <marker date="1551464352847" expanded="true" signature="1028:1030" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - Item.py">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Inheritance.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="391">
+                  <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+                  <folding>
+                    <element signature="e#303#384#0" />
+                    <element signature="e#422#476#0" />
+                    <element signature="e#511#562#0" />
+                    <element signature="e#598#649#0" />
+                    <element signature="e#682#745#0" />
+                    <element signature="e#779#844#0" />
+                    <element signature="e#1096#1180#0" />
+                    <marker date="1551465053581" expanded="true" signature="22:27" ph="..." />
+                    <marker date="1551465053581" expanded="true" signature="99:104" ph="..." />
+                    <marker date="1551465053581" expanded="true" signature="673:751" ph="..." />
+                    <marker date="1551465053581" expanded="true" signature="865:870" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - Item.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="68">
+                  <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+                  <folding>
+                    <marker date="1551465416913" expanded="true" signature="19:24" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -212,7 +221,9 @@
         <option value="$PROJECT_DIR$/Eduardo Sanchez - Dictionary World Map.py" />
         <option value="$PROJECT_DIR$/Object - Eduardo Sanchez.py" />
         <option value="$PROJECT_DIR$/World Map OOP.py" />
+        <option value="$PROJECT_DIR$/Eduardo Sanchez - World Map OOP.py" />
         <option value="$PROJECT_DIR$/Inheritance.py" />
+        <option value="$PROJECT_DIR$/Eduardo Sanchez - Item.py" />
       </list>
     </option>
   </component>
@@ -223,8 +234,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="461" />
+    <option name="y" value="-13" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -233,6 +244,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,7 +261,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,7 +382,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/World Map OOP.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\8k6h\Documents\GitHub\CSE\Eduardo Sanchez - World Map OOP.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -416,7 +427,7 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.22239032" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27540985" />
@@ -511,17 +522,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Object - Eduardo Sanchez.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Object Notes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+          <folding>
+            <marker date="1550252022169" expanded="true" signature="44:49" ph="..." />
+            <marker date="1550252022169" expanded="true" signature="384:388" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Semester 2 Notes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2210">
+        <state relative-caret-position="528">
           <caret line="130" selection-start-line="130" selection-end-line="130" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - Dictionary World Map.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="136" column="19" selection-start-line="136" selection-start-column="19" selection-end-line="136" selection-end-column="19" />
+        <state relative-caret-position="204">
+          <caret line="92" column="16" lean-forward="true" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
           <folding>
             <element signature="e#34#250#0" />
             <element signature="e#172#244#0" />
@@ -545,10 +574,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/World Map OOP.py">
+    <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - World Map OOP.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        <state relative-caret-position="174">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="e#1137#1388#0" />
             <element signature="e#1469#1714#0" />
@@ -561,40 +590,38 @@
             <element signature="e#4573#4817#0" />
             <element signature="e#5103#5349#0" />
             <element signature="e#5414#5552#0" />
-            <marker date="1551289543390" expanded="true" signature="19:24" ph="..." />
-            <marker date="1551289543390" expanded="true" signature="1049:1089" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Object - Eduardo Sanchez.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Object Notes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-          <folding>
-            <marker date="1550252022169" expanded="true" signature="44:49" ph="..." />
-            <marker date="1550252022169" expanded="true" signature="384:388" ph="..." />
+            <marker date="1551464352847" expanded="true" signature="19:24" ph="..." />
+            <marker date="1551464352847" expanded="true" signature="1028:1030" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Inheritance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+        <state relative-caret-position="391">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
           <folding>
-            <marker date="1551375867329" expanded="true" signature="22:27" ph="..." />
-            <marker date="1551375867329" expanded="true" signature="99:104" ph="..." />
-            <marker date="1551375867329" expanded="true" signature="673:751" ph="..." />
-            <marker date="1551375867329" expanded="true" signature="865:870" ph="..." />
-            <marker date="1551375867329" expanded="true" signature="1012:1183" ph="..." />
+            <element signature="e#303#384#0" />
+            <element signature="e#422#476#0" />
+            <element signature="e#511#562#0" />
+            <element signature="e#598#649#0" />
+            <element signature="e#682#745#0" />
+            <element signature="e#779#844#0" />
+            <element signature="e#1096#1180#0" />
+            <marker date="1551465053581" expanded="true" signature="22:27" ph="..." />
+            <marker date="1551465053581" expanded="true" signature="99:104" ph="..." />
+            <marker date="1551465053581" expanded="true" signature="673:751" ph="..." />
+            <marker date="1551465053581" expanded="true" signature="865:870" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - Item.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding>
+            <marker date="1551465416913" expanded="true" signature="19:24" ph="..." />
           </folding>
         </state>
       </provider>
