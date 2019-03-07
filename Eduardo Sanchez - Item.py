@@ -21,12 +21,17 @@ class Rock(Weapon):
 
 class MetalBeam(Weapon):
     def __init__(self):
-        super(MetalBeam, self).__init__("Metal_Beam", 20, 50)
+        super(MetalBeam, self).__init__("Metal Beam", 20, 50)
+
+
+class Dagger(Weapon):
+    def __init__(self):
+        super(Dagger, self).__init__("Small Dagger", 25, 30)
 
 
 class MakeshiftSword(Weapon):
     def __init__(self):
-        super(MakeshiftSword, self).__init__("MakeshiftSword", 40, 10)
+        super(MakeshiftSword, self).__init__("Makeshift Sword", 40, 10)
 
 
 class Potion(object):
@@ -40,14 +45,18 @@ class Potion(object):
     def drink_health_potion(self):
         self.amount -= 1
         self.health += 50
+        print("You drink a health potion and feel regenerated.")
 
     def drink_defense_potion(self):
         self.amount -= 1
         self.shield += 50
+        print("You drink a defense potion and feel protected.")
 
-    def drink_strength_potion(self):
+    def drink_life_potion(self):
         self.amount -= 1
-        self.health += 0
+        self.health += 50
+        self.shield += 50
+        print("You drink a life potion and feel revived.")
 
 
 class HealthPotion(Potion):
@@ -60,9 +69,9 @@ class ShieldPotion(Potion):
         super(ShieldPotion, self).__init__("Shield Potion", 0, 50, 2, 0)
 
 
-class StrengthPotion(Potion):
+class LifePotion(Potion):
     def __init__(self):
-        super(StrengthPotion, self).__init__("Health Potion", 0, 0, 2, 0)
+        super(LifePotion, self).__init__("Life Potion", 50, 50, 2, 0)
 
 
 class Armor(object):
@@ -73,4 +82,29 @@ class Armor(object):
 
 class Helmet(Armor):
     def __init__(self):
-        super(Helmet, self).__init__("Helmet", 10)
+        super(Helmet, self).__init__("Helmet", 50)
+
+
+class Chestpiece(Armor):
+    def __init__(self):
+        super(Chestpiece, self).__init__("Chestpiece", 100)
+
+
+class Leggings(Armor):
+    def __init__(self):
+        super(Leggings, self).__init__("Leggings", 50)
+
+
+class Boots(Armor):
+    def __init__(self):
+        super(Boots, self).__init__("Boots", 25)
+
+
+class Shield(Armor):
+    def __init__(self):
+        super(Shield, self).__init__("An Arm Shield", 100)
+
+
+class WorldObjects(object):
+    def __init__(self):
+        super(WorldObjects, self).__init__()
