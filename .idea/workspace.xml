@@ -60,13 +60,14 @@
           <entry key="project.open.time.65" value="2" />
           <entry key="project.open.time.66" value="2" />
           <entry key="project.open.time.69" value="2" />
+          <entry key="project.open.time.72" value="1" />
           <entry key="project.open.time.74" value="1" />
           <entry key="project.open.time.75" value="1" />
           <entry key="project.open.time.79" value="2" />
           <entry key="project.open.time.81" value="1" />
           <entry key="project.open.time.82" value="2" />
           <entry key="project.open.time.85" value="1" />
-          <entry key="project.opened" value="41" />
+          <entry key="project.opened" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -83,19 +84,19 @@
         <counts>
           <entry key="Eduardo Sanchez - Dictionary World Map" value="2" />
           <entry key="dummy" value="26" />
-          <entry key="py" value="17714" />
+          <entry key="py" value="17732" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="28" />
-          <entry key="Python" value="17714" />
+          <entry key="Python" value="17732" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.30702516">
+    <splitter split-orientation="horizontal" split-proportion="0.4043977">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -144,13 +145,12 @@
             <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - Item.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state>
+                  <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
                   <folding>
-                    <marker date="1551980753504" expanded="true" signature="98:103" ph="..." />
-                    <marker date="1551980753504" expanded="true" signature="725:824" ph="..." />
-                    <marker date="1551980753504" expanded="true" signature="1096:1218" ph="..." />
-                    <marker date="1551980753504" expanded="true" signature="1249:1370" ph="..." />
-                    <marker date="1551980753504" expanded="true" signature="1564:1913" ph="..." />
-                    <marker date="1551980753504" expanded="true" signature="2068:2073" ph="..." />
+                    <marker date="1552066900021" expanded="true" signature="96:101" ph="..." />
+                    <marker date="1552066900021" expanded="true" signature="723:822" ph="..." />
+                    <marker date="1552066900021" expanded="true" signature="1086:1889" ph="..." />
+                    <marker date="1552066900021" expanded="true" signature="2042:2047" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -159,11 +159,9 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Inheritance.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
-                  <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+                <state relative-caret-position="272">
+                  <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
                   <folding>
-                    <element signature="e#303#384#0" />
-                    <element signature="e#422#476#0" />
                     <element signature="e#511#562#0" />
                     <element signature="e#598#649#0" />
                     <element signature="e#682#745#0" />
@@ -185,20 +183,13 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - Item.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="460">
-                  <caret line="109" column="43" selection-start-line="109" selection-start-column="43" selection-end-line="109" selection-end-column="43" />
+                <state relative-caret-position="358">
+                  <caret line="73" column="11" selection-start-line="73" selection-start-column="11" selection-end-line="73" selection-end-column="11" />
                   <folding>
-                    <marker date="1551980753504" expanded="true" signature="98:103" ph="..." />
-                    <marker date="1551980753504" expanded="true" signature="608:696" ph="..." />
-                    <marker date="1551980753504" expanded="true" signature="725:824" ph="..." />
-                    <marker date="1551980753504" expanded="true" signature="1096:1218" ph="..." />
-                    <marker date="1551980753504" expanded="true" signature="1249:1370" ph="..." />
-                    <marker date="1551980753504" expanded="true" signature="1564:1913" ph="..." />
-                    <marker date="1551980753504" expanded="true" signature="2068:2073" ph="..." />
-                    <marker date="1551980753504" expanded="true" signature="2170:2255" ph="..." />
-                    <marker date="1551980753504" expanded="true" signature="2279:2284" ph="..." />
-                    <marker date="1551980753504" expanded="true" signature="2476:2560" ph="..." />
-                    <marker date="1551980753504" expanded="true" signature="2589:2594" ph="..." />
+                    <marker date="1552066900021" expanded="true" signature="96:101" ph="..." />
+                    <marker date="1552066900021" expanded="true" signature="723:822" ph="..." />
+                    <marker date="1552066900021" expanded="true" signature="1086:1889" ph="..." />
+                    <marker date="1552066900021" expanded="true" signature="2042:2047" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -255,7 +246,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -272,6 +262,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -434,10 +425,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.12783661" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.20877458" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27540985" />
@@ -593,11 +585,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Inheritance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="272">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
           <folding>
-            <element signature="e#303#384#0" />
-            <element signature="e#422#476#0" />
             <element signature="e#511#562#0" />
             <element signature="e#598#649#0" />
             <element signature="e#682#745#0" />
@@ -613,20 +603,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - Item.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="109" column="43" selection-start-line="109" selection-start-column="43" selection-end-line="109" selection-end-column="43" />
+        <state relative-caret-position="358">
+          <caret line="73" column="11" selection-start-line="73" selection-start-column="11" selection-end-line="73" selection-end-column="11" />
           <folding>
-            <marker date="1551980753504" expanded="true" signature="98:103" ph="..." />
-            <marker date="1551980753504" expanded="true" signature="608:696" ph="..." />
-            <marker date="1551980753504" expanded="true" signature="725:824" ph="..." />
-            <marker date="1551980753504" expanded="true" signature="1096:1218" ph="..." />
-            <marker date="1551980753504" expanded="true" signature="1249:1370" ph="..." />
-            <marker date="1551980753504" expanded="true" signature="1564:1913" ph="..." />
-            <marker date="1551980753504" expanded="true" signature="2068:2073" ph="..." />
-            <marker date="1551980753504" expanded="true" signature="2170:2255" ph="..." />
-            <marker date="1551980753504" expanded="true" signature="2279:2284" ph="..." />
-            <marker date="1551980753504" expanded="true" signature="2476:2560" ph="..." />
-            <marker date="1551980753504" expanded="true" signature="2589:2594" ph="..." />
+            <marker date="1552066900021" expanded="true" signature="96:101" ph="..." />
+            <marker date="1552066900021" expanded="true" signature="723:822" ph="..." />
+            <marker date="1552066900021" expanded="true" signature="1086:1889" ph="..." />
+            <marker date="1552066900021" expanded="true" signature="2042:2047" ph="..." />
           </folding>
         </state>
       </provider>

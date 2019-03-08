@@ -3,7 +3,7 @@ class Item(object):
         self.name = name
 
 
-class Weapon(object):
+class Weapon(Item):
     def __init__(self, name, damage, durability):
         super(Weapon, self).__init__(name)
         self.damage = damage
@@ -34,7 +34,7 @@ class MakeshiftSword(Weapon):
         super(MakeshiftSword, self).__init__("Makeshift Sword", 40, 10)
 
 
-class Potion(object):
+class Potion(Item):
     def __init__(self, name, heal, shield, amount, health):
         super(Potion, self).__init__(name)
         self.heal = heal
@@ -42,39 +42,39 @@ class Potion(object):
         self.amount = amount
         self.health = health
 
-    def drink_health_potion(self):
-        self.amount -= 1
-        self.health += 50
-        print("You drink a health potion and feel regenerated.")
-
-    def drink_defense_potion(self):
-        self.amount -= 1
-        self.shield += 50
-        print("You drink a defense potion and feel protected.")
-
-    def drink_life_potion(self):
-        self.amount -= 1
-        self.health += 50
-        self.shield += 50
-        print("You drink a life potion and feel revived.")
-
 
 class HealthPotion(Potion):
     def __init__(self):
         super(HealthPotion, self).__init__("Health Potion", 50, 0, 2, 0)
+
+    def drink_potion(self):
+        self.amount -= 1
+        self.health += 50
+        print("You drink a health potion and feel regenerated.")
 
 
 class ShieldPotion(Potion):
     def __init__(self):
         super(ShieldPotion, self).__init__("Shield Potion", 0, 50, 2, 0)
 
+    def drink_potion(self):
+        self.amount -= 1
+        self.shield += 50
+        print("You drink a defense potion and feel protected.")
+
 
 class LifePotion(Potion):
     def __init__(self):
         super(LifePotion, self).__init__("Life Potion", 50, 50, 2, 0)
 
+    def drink_potion(self):
+        self.amount -= 1
+        self.health += 50
+        self.shield += 50
+        print("You drink a life potion and feel revived.")
 
-class Armor(object):
+
+class Armor(Item):
     def __init__(self, name, defense):
         super(Armor, self).__init__(name)
         self.defense = defense
@@ -105,6 +105,6 @@ class Shield(Armor):
         super(Shield, self).__init__("An Arm Shield", 100)
 
 
-class WorldObjects(object):
-    def __init__(self):
-        super(WorldObjects, self).__init__()
+class Tools(Item):
+    def __init__(self, name):
+        super(Tools, self).__init__(name)
