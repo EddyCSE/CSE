@@ -32,7 +32,7 @@ class Player(object):
 
 OUT = Room("-=-OUT-=-", None, None, None, None, "You've made it out through skill and intelligence."
                                                 " You now just need to find civilization and get your way back home. "
-                                                "Congrats, you beat the game. ")  # <-- Exit Room
+                                                "Congrats, you beat the game. ")  # <-- Final Room
 YOUR_CELL = Room("-Your Cell-", "HALLWAY1", None, None, None, "An abandoned cell... you don't know how you got here,"
                                                               " but you need to escape."
                                                               "Your cell door is on the north wall.")  # <-- Start Room

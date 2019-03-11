@@ -45,7 +45,7 @@ class Potion(Item):
 
 class HealthPotion(Potion):
     def __init__(self):
-        super(HealthPotion, self).__init__("Health Potion", 50, 0, 2, 0)
+        super(HealthPotion, self).__init__("Health Potion", 50, 0, 0, 0)
 
     def drink_potion(self):
         self.amount -= 1
@@ -55,7 +55,7 @@ class HealthPotion(Potion):
 
 class ShieldPotion(Potion):
     def __init__(self):
-        super(ShieldPotion, self).__init__("Shield Potion", 0, 50, 2, 0)
+        super(ShieldPotion, self).__init__("Shield Potion", 0, 50, 0, 0)
 
     def drink_potion(self):
         self.amount -= 1
@@ -65,7 +65,7 @@ class ShieldPotion(Potion):
 
 class LifePotion(Potion):
     def __init__(self):
-        super(LifePotion, self).__init__("Life Potion", 50, 50, 2, 0)
+        super(LifePotion, self).__init__("Life Potion", 50, 50, 0, 0)
 
     def drink_potion(self):
         self.amount -= 1
@@ -105,6 +105,21 @@ class Shield(Armor):
         super(Shield, self).__init__("An Arm Shield", 100)
 
 
-class Tools(Item):
+class Tool(Item):
     def __init__(self, name):
-        super(Tools, self).__init__(name)
+        super(Tool, self).__init__(name)
+
+
+class Pickaxe(Tool):
+    def __init__(self):
+        super(Pickaxe, self).__init__("Pickaxe")
+
+
+class Crowbar(Tool):
+    def __init__(self):
+        super(Crowbar, self).__init__("Crowbar")
+
+
+class Screwdriver(Tool):
+    def __init__(self):
+        super(Screwdriver, self).__init__("Screwdriver")
