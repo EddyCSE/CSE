@@ -123,3 +123,40 @@ class Crowbar(Tool):
 class Screwdriver(Tool):
     def __init__(self):
         super(Screwdriver, self).__init__("Screwdriver")
+
+
+class Character(object):
+    def __init__(self, name: str, health: int, weapon, armor):
+        self.name = name
+        self.health = health
+        self.weapon = weapon
+        self.armor = armor
+
+    def take_damage(self, damage: int):
+        if self.armor.defense > damage:
+            print("No damage is done because of armor overpowering the weak weapon.")
+        if self.health >= 0:
+            print("%s boi died" % self.name)
+
+        else:
+            self.health -= damage - self.armor.defense
+        print("%s has %d health left." % (self.name, self.health))
+
+    def attack(self, target):
+        print("%s attacks %s for %d damage." % (self.name, target.name, self.weapon.damage))
+        target.take_damage(self.weapon.damage)
+
+
+# Items
+makeshiftsword = Weapon("MakeshiftSword", 40, 10)
+chestpiece = Armor("A metal chestpiece", 100)
+
+
+# Characters
+orc = Character("Orc1", 100, makeshiftsword, Armor("Generic Armor", 2))
+orc2 = Character("Eddie", 1000, makeshiftsword, chestpiece)
+
+orc.attack(orc2)
+orc2.attack(orc)
+orc2.attack(orc)
+orc2.attack(orc)
