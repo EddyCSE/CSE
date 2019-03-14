@@ -12,6 +12,8 @@ class Weapon(Item):
     def attack(self, durability):
         self.durability = durability
         print("You attack with your weapon.")
+        self.durability -= 5
+        print("You %s had %s durability left" % (durability, Weapon))
 
 
 class Rock(Weapon):
@@ -35,27 +37,25 @@ class MakeshiftSword(Weapon):
 
 
 class Potion(Item):
-    def __init__(self, name, heal, shield, amount, health):
+    def __init__(self, name, heal, shield, amount):
         super(Potion, self).__init__(name)
         self.heal = heal
         self.shield = shield
         self.amount = amount
-        self.health = health
 
 
 class HealthPotion(Potion):
     def __init__(self):
-        super(HealthPotion, self).__init__("Health Potion", 50, 0, 0, 0)
+        super(HealthPotion, self).__init__("Health Potion", 50, 0, 0)
 
     def drink_potion(self):
         self.amount -= 1
-        self.health += 50
         print("You drink a health potion and feel regenerated.")
 
 
 class ShieldPotion(Potion):
     def __init__(self):
-        super(ShieldPotion, self).__init__("Shield Potion", 0, 50, 0, 0)
+        super(ShieldPotion, self).__init__("Shield Potion", 0, 50, 0)
 
     def drink_potion(self):
         self.amount -= 1
@@ -65,11 +65,10 @@ class ShieldPotion(Potion):
 
 class LifePotion(Potion):
     def __init__(self):
-        super(LifePotion, self).__init__("Life Potion", 50, 50, 0, 0)
+        super(LifePotion, self).__init__("Life Potion", 50, 50, 0)
 
     def drink_potion(self):
         self.amount -= 1
-        self.health += 50
         self.shield += 50
         print("You drink a life potion and feel revived.")
 
@@ -134,10 +133,10 @@ class Character(object):
 
     def take_damage(self, damage: int):
         if self.armor.defense > damage:
-            print("No damage is done because of armor overpowering the weak weapon.")
-        if self.health >= 0:
+            print("But no damage is done because of armor overpowering the weak weapon.")
+        if self.health <= 0:
             print("%s boi died" % self.name)
-
+            return
         else:
             self.health -= damage - self.armor.defense
         print("%s has %d health left." % (self.name, self.health))
@@ -148,15 +147,31 @@ class Character(object):
 
 
 # Items
+rock = Weapon("A Rock", 5, 10)
+metalbeam = Weapon("A Metal Beam", 20, 50)
+dagger = Weapon("A Dagger", 25, 30)
 makeshiftsword = Weapon("MakeshiftSword", 40, 10)
-chestpiece = Armor("A metal chestpiece", 100)
+
+chestpiece = Armor("A Metal Chestpiece", 100)
+helmet = Armor("A Metal Helmet", 50)
+leggings = Armor("Metal Leggings", 100)
+boots = Armor("Metal Boots", 50)
+shield = Armor("A Metal Arm Shield", 25)
+
+healthpotion = Potion("Health Potion", 50, 0, 0)
+shieldpotion = Potion("Shield Potion", 0, 50, 0)
+lifepotion = Potion("Life Potion", 50, 50, 0)
 
 
 # Characters
-orc = Character("Orc1", 100, makeshiftsword, Armor("Generic Armor", 2))
-orc2 = Character("Eddie", 1000, makeshiftsword, chestpiece)
+orc1 = Character("Orc", 100, makeshiftsword, helmet)
+Eddie = Character("Eddie", 1000, makeshiftsword, helmet)
 
-orc.attack(orc2)
-orc2.attack(orc)
-orc2.attack(orc)
-orc2.attack(orc)
+orc1.attack(Eddie)
+Eddie.attack(orc1)
+Eddie.attack(orc1)
+Eddie.attack(orc1)
+Eddie.attack(orc1)
+Eddie.attack(orc1)
+Eddie.attack(orc1)
+
