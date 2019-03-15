@@ -99,9 +99,9 @@ class Boots(Armor):
         super(Boots, self).__init__("Boots", 25)
 
 
-class Shield(Armor):
+class ArmShield(Armor):
     def __init__(self):
-        super(Shield, self).__init__("An Arm Shield", 100)
+        super(ArmShield, self).__init__("An Arm Shield", 100)
 
 
 class Tool(Item):
@@ -134,44 +134,46 @@ class Character(object):
     def take_damage(self, damage: int):
         if self.armor.defense > damage:
             print("But no damage is done because of armor overpowering the weak weapon.")
-        if self.health <= 0:
+        elif self.health <= 0:
             print("%s boi died" % self.name)
             return
         else:
             self.health -= damage - self.armor.defense
-        print("%s has %d health left." % (self.name, self.health))
+            print("%s has %d health left." % (self.name, self.health))
 
     def attack(self, target):
         print("%s attacks %s for %d damage." % (self.name, target.name, self.weapon.damage))
         target.take_damage(self.weapon.damage)
 
 
-# Items
+# Weapons
 rock = Weapon("A Rock", 5, 10)
 metalbeam = Weapon("A Metal Beam", 20, 50)
 dagger = Weapon("A Dagger", 25, 30)
 makeshiftsword = Weapon("MakeshiftSword", 40, 10)
+legendary_pistol = Weapon("Golden Pistol", 150, 10)
 
+# Armor
 chestpiece = Armor("A Metal Chestpiece", 100)
 helmet = Armor("A Metal Helmet", 50)
 leggings = Armor("Metal Leggings", 100)
 boots = Armor("Metal Boots", 50)
-shield = Armor("A Metal Arm Shield", 25)
+arm_shield = Armor("A Metal Arm Shield", 25)
 
+# Potions
 healthpotion = Potion("Health Potion", 50, 0, 0)
 shieldpotion = Potion("Shield Potion", 0, 50, 0)
 lifepotion = Potion("Life Potion", 50, 50, 0)
 
+# Tools
+pickaxe = Tool("A Sturdy Pickaxe")
+crowbar = Tool("A Crowbar")
+screwdriver = Tool("A Screwdriver")
 
-# Characters
+# Character
 orc1 = Character("Orc", 100, makeshiftsword, helmet)
-Eddie = Character("Eddie", 1000, makeshiftsword, helmet)
+Eddie = Character("Eddie", 100, legendary_pistol, helmet)
 
 orc1.attack(Eddie)
+print("\n")
 Eddie.attack(orc1)
-Eddie.attack(orc1)
-Eddie.attack(orc1)
-Eddie.attack(orc1)
-Eddie.attack(orc1)
-Eddie.attack(orc1)
-
