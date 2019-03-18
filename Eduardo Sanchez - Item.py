@@ -170,10 +170,10 @@ pickaxe = Tool("A Sturdy Pickaxe")
 crowbar = Tool("A Crowbar")
 screwdriver = Tool("A Screwdriver")
 
-# Character
-orc1 = Character("Orc", 100, makeshiftsword, helmet)
-Eddie = Character("Eddie", 100, legendary_pistol, helmet)
+# Characters
+Demon = Character("Demon", 100, makeshiftsword, helmet)
+Player = Character("You", 100, legendary_pistol, helmet)
 
-orc1.attack(Eddie)
+Demon.attack(Player)
 print("\n")
-Eddie.attack(orc1)
+Player.attack(Demon)

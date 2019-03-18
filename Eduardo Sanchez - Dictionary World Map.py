@@ -147,8 +147,6 @@ world_map = {
 playing = True
 current_node = world_map['YOUR_CELL']
 directions = ['NORTH', 'SOUTH', 'EAST', 'WEST']
-actions = ['PICK UP']
-items = []
 
 while playing:
     print(current_node['NAME'])
