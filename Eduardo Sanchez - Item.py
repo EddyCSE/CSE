@@ -48,7 +48,7 @@ class HealthPotion(Potion):
     def __init__(self):
         super(HealthPotion, self).__init__("Health Potion", 50, 0, 0)
 
-    def drink_potion(self):
+    def drink_health_potion(self):
         self.amount -= 1
         print("You drink a health potion and feel regenerated.")
 
@@ -57,7 +57,7 @@ class ShieldPotion(Potion):
     def __init__(self):
         super(ShieldPotion, self).__init__("Shield Potion", 0, 50, 0)
 
-    def drink_potion(self):
+    def drink_shield_potion(self):
         self.amount -= 1
         self.shield += 50
         print("You drink a defense potion and feel protected.")
@@ -67,7 +67,7 @@ class LifePotion(Potion):
     def __init__(self):
         super(LifePotion, self).__init__("Life Potion", 50, 50, 0)
 
-    def drink_potion(self):
+    def drink_life_potion(self):
         self.amount -= 1
         self.shield += 50
         print("You drink a life potion and feel revived.")

@@ -21,13 +21,16 @@ class Player(object):
 
 
 class Room(object):
-    def __init__(self, name, north=None, east=None, south=None, west=None, description=()):
+    def __init__(self, name, north=None, east=None, south=None, west=None, description=(), items=None):
+        if items is None:
+            items = []
         self.name = name
         self.north = north
         self.east = east
         self.south = south
         self.west = west
         self.description = description
+        self.items = items
 
 
 class Item(object):
@@ -68,6 +71,11 @@ class MakeshiftSword(Weapon):
         super(MakeshiftSword, self).__init__("Makeshift Sword", 40, 10)
 
 
+class Fists(Weapon):
+    def __init__(self):
+        super(Fists, self).__init__("Fists", 1, 100000000)
+
+
 class Potion(Item):
     def __init__(self, name, heal, shield, amount):
         super(Potion, self).__init__(name)
@@ -80,7 +88,7 @@ class HealthPotion(Potion):
     def __init__(self):
         super(HealthPotion, self).__init__("Health Potion", 50, 0, 0)
 
-    def drink_potion(self):
+    def drink_health_potion(self):
         self.amount -= 1
         print("You drink a health potion and feel regenerated.")
 
@@ -89,7 +97,7 @@ class ShieldPotion(Potion):
     def __init__(self):
         super(ShieldPotion, self).__init__("Shield Potion", 0, 50, 0)
 
-    def drink_potion(self):
+    def drink_shield_potion(self):
         self.amount -= 1
         self.shield += 50
         print("You drink a defense potion and feel protected.")
@@ -99,7 +107,7 @@ class LifePotion(Potion):
     def __init__(self):
         super(LifePotion, self).__init__("Life Potion", 50, 50, 0)
 
-    def drink_potion(self):
+    def drink_life_potion(self):
         self.amount -= 1
         self.shield += 50
         print("You drink a life potion and feel revived.")
@@ -184,6 +192,7 @@ metalbeam = Weapon("A Metal Beam", 20, 50)
 dagger = Weapon("A Dagger", 25, 30)
 makeshiftsword = Weapon("MakeshiftSword", 40, 10)
 legendary_pistol = Weapon("Golden Pistol", 150, 10)
+fists = Weapon("Fists", 1, 100000000)
 
 # Armor
 chestpiece = Armor("A Metal Chestpiece", 100)
@@ -204,7 +213,7 @@ screwdriver = Tool("A Screwdriver")
 
 # Characters
 Demon = Character("Demon", 100, makeshiftsword, helmet)
-Player = Character("You", 100, legendary_pistol, helmet)
+Slug = Character("Slug", 10, rock, None)
 
 OUT = Room("-=-OUT-=-", None, None, None, None, "You've made it out through skill and intelligence."
                                                 " You now just need to find civilization and get your way back home. "
@@ -247,10 +256,10 @@ LIBRARY = Room("-Library-", "CAFETERIA", None, None, "PHONE_ROOM", "Books and 'k
 PHONE_ROOM = Room("-Phone Room-", None, "LIBRARY", None, None, "This is where you call your family, "
                                                                "none of the phones are working. :/")
 
-player = Player(YOUR_CELL)
-
 playing = True
 directions = ['north', 'east', 'south', 'west']
+
+player = Player(YOUR_CELL)
 
 while playing:
     print(player.current_location.name)
