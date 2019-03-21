@@ -15,6 +15,12 @@ class Player(object):
         name_of_room = getattr(self.current_location, direction)
         return globals()[name_of_room]
 
+    def find_nearest_enemy(self, current_location):
+        if target
+
+    def find_nearest_tool(self):
+
+
 
 class Room(object):
     def __init__(self, name, north=None, east=None, south=None, west=None, description=(), items=None, enemy=None):
@@ -214,7 +220,7 @@ YOUR_CELL = Room("-Your Cell-", "HALLWAY1", None, None, None, "An abandoned cell
                                                               " but you need to escape."
                                                               "Your cell door is on the north wall.", None)  # <-- SRoom
 UNKNOWN_CELL = Room("- /= --uNkNown cEll- /=-", "OUT", None, "HALLWAY2", None, "You managed to get in and there's an "
-                                                                               "escape hole", None, Slug)
+                                                                               "escape hole", None, "Slug")
 HALLWAY1 = Room("-East Hallway-", "SHOWER_ROOM", "SECURITY_ROOM2", "YOUR_CELL", "HALLWAY2", "There is a long hallway,"
                                                                                             " breezes coming left and "
                                                                                             "right with a door north "
@@ -239,7 +245,7 @@ NURSERY = Room("-Nursery-", "SECURITY_ROOM", None, None, None, "The area the nur
 WARDENS_OFFICE = Room("-Warden's Office-", None, None, "SECURITY_ROOM", None, "The Warden's "
                                                                               "room, spoopy.", None)
 ENTRANCE = Room("-Entrance-", None, "SECURITY_ROOM", None, None, "The exit/entrance, it's all boarded up, can't"
-                                                                 " seem to ever get through.", screwdriver)
+                                                                 " seem to ever get through.", "screwdriver")
 SECURITY_ROOM2 = Room("-East Security Room-", None, "CAFETERIA", None, "HALLWAY1", "A contraband area, nothing is "
                                                                                    "working. A cafeteria is seen"
                                                                                    " east.", None)
@@ -247,17 +253,18 @@ CAFETERIA = Room("-Cafeteria-", "COURT_YARD", "KITCHEN", "LIBRARY", "SECURITY_RO
                                                                                       "Open areas north, east,"
                                                                                       " and south.", None)
 COURT_YARD = Room("-Court Yard-", None, None, "CAFETERIA", None, "Basketball, weights, "
-                                                                 "and barbed wire located here.", pickaxe)
+                                                                 "and barbed wire located here.", "pickaxe")
 KITCHEN = Room("-Kitchen-", None, None, None, "CAFETERIA", "Utensils here and a horrible smell.", None)
 LIBRARY = Room("-Library-", "CAFETERIA", None, None, "PHONE_ROOM", "Books and 'knowledge here. One of the books have "
                                                                    "been written on it. It reads 'Open the locked"
                                                                    " cell...' ", None)
 PHONE_ROOM = Room("-Phone Room-", None, "LIBRARY", None, None, "This is where you call your family, "
-                                                               "none of the phones are working. :/", crowbar)
+                                                               "none of the phones are working. :/", "crowbar")
 
 playing = True
 directions = ['north', 'east', 'south', 'west']
 actions = ['attack', 'a', 'block', 'b']
+pick_up = ['pick up']
 
 player = Player(YOUR_CELL)
 
@@ -282,6 +289,18 @@ while playing:
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
     elif command.lower() in actions:
+        try:
+            attack = Character.take_damage
+        except KeyError:
+            print("I can't do that")
+    else:
+        print("Command Not Found")
+
+while playing:
+    command = input(">_")
+    if command.lower() in ['q', 'quit', 'exit']:
+        playing = False
+    elif command.lower() in pick_up:
         try:
             attack = Character.take_damage
         except KeyError:
