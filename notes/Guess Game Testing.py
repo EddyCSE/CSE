@@ -231,3 +231,8 @@ actions = ['attack', 'a', 'block', 'b']
 player = Player(YOUR_CELL)
 
 Demon.attack(Slug)
+
+# 1. Put items in room
+# 2. Show items in room
+# 3. Pick up item
+# 4. Use item
