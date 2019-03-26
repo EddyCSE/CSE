@@ -3,6 +3,33 @@ class Item(object):
         self.name = name
 
 
+class Player(object):
+    def __init__(self, starting_location):
+        self.current_location = starting_location
+        self.inventory = []
+
+    def move(self, new_location):
+        self.current_location = new_location
+
+    def find_next_room(self, direction):
+        name_of_room = getattr(self.current_location, direction)
+        return globals()[name_of_room]
+
+
+class Room(object):
+    def __init__(self, name, north=None, east=None, south=None, west=None, description=(), items=None, enemy=None):
+        if items is None:
+            items = []
+        self.name = name
+        self.north = north
+        self.east = east
+        self.south = south
+        self.west = west
+        self.description = description
+        self.items = items
+        self.enemy = enemy
+
+
 class Weapon(Item):
     def __init__(self, name, damage, durability):
         super(Weapon, self).__init__(name)
@@ -36,6 +63,16 @@ class MakeshiftSword(Weapon):
         super(MakeshiftSword, self).__init__("Makeshift Sword", 40, 10)
 
 
+class Fists(Weapon):
+    def __init__(self):
+        super(Fists, self).__init__("Fists", 1, 100000000)
+
+
+class LegendaryPistol(Weapon):
+    def __init__(self):
+        super(LegendaryPistol, self).__init__("Legendary Pistol", 150, 10)
+
+
 class Potion(Item):
     def __init__(self, name, heal, shield, amount):
         super(Potion, self).__init__(name)
@@ -46,7 +83,7 @@ class Potion(Item):
 
 class HealthPotion(Potion):
     def __init__(self):
-        super(HealthPotion, self).__init__("Health Potion", 50, 0, 0)
+        super(HealthPotion, self).__init__("Health Potion", 50, 0, 3)
 
     def drink_health_potion(self):
         self.amount -= 1
@@ -55,7 +92,7 @@ class HealthPotion(Potion):
 
 class ShieldPotion(Potion):
     def __init__(self):
-        super(ShieldPotion, self).__init__("Shield Potion", 0, 50, 0)
+        super(ShieldPotion, self).__init__("Shield Potion", 0, 50, 3)
 
     def drink_shield_potion(self):
         self.amount -= 1
@@ -65,7 +102,7 @@ class ShieldPotion(Potion):
 
 class LifePotion(Potion):
     def __init__(self):
-        super(LifePotion, self).__init__("Life Potion", 50, 50, 0)
+        super(LifePotion, self).__init__("Life Potion", 50, 50, 3)
 
     def drink_life_potion(self):
         self.amount -= 1
@@ -147,33 +184,30 @@ class Character(object):
 
 
 # Weapons
-rock = Weapon("A Rock", 5, 10)
-metalbeam = Weapon("A Metal Beam", 20, 50)
-dagger = Weapon("A Dagger", 25, 30)
-makeshiftsword = Weapon("MakeshiftSword", 40, 10)
-legendary_pistol = Weapon("Golden Pistol", 150, 10)
+rock = Weapon("A Rock", 5, 15)  # Added
+metalbeam = Weapon("A Metal Beam", 20, 50)  # Added
+dagger = Weapon("A Dagger", 25, 30)  # Added
+makeshiftsword = Weapon("MakeshiftSword", 40, 10)  # Added
+legendary_pistol = Weapon("Golden Pistol", 150, 10)  # Added
+fists = Weapon("Fists", 1, 100000000)  # Added
 
 # Armor
-chestpiece = Armor("A Metal Chestpiece", 100)
-helmet = Armor("A Metal Helmet", 50)
-leggings = Armor("Metal Leggings", 100)
-boots = Armor("Metal Boots", 50)
-arm_shield = Armor("A Metal Arm Shield", 25)
+chestpiece = Armor("A Metal Chestpiece", 100)  # Added
+helmet = Armor("A Metal Helmet", 50)  # Added
+leggings = Armor("Metal Leggings", 100)  # Added
+boots = Armor("Metal Boots", 50)  # Added
+arm_shield = Armor("A Metal Arm Shield", 25)  # Added
 
 # Potions
-healthpotion = Potion("Health Potion", 50, 0, 0)
-shieldpotion = Potion("Shield Potion", 0, 50, 0)
-lifepotion = Potion("Life Potion", 50, 50, 0)
+healthpotion = Potion("Health Potion", 50, 0, 3)  # Added
+shieldpotion = Potion("Shield Potion", 0, 50, 3)  # Added
+lifepotion = Potion("Life Potion", 50, 50, 3)  # Added
 
 # Tools
-pickaxe = Tool("A Sturdy Pickaxe")
-crowbar = Tool("A Crowbar")
-screwdriver = Tool("A Screwdriver")
+pickaxe = Tool("A Sturdy Pickaxe")  # Added
+crowbar = Tool("A Crowbar")  # Added
+screwdriver = Tool("A Screwdriver")  # Added
 
 # Characters
 Demon = Character("Demon", 100, makeshiftsword, helmet)
-Player = Character("You", 100, legendary_pistol, helmet)
-
-Demon.attack(Player)
-print("\n")
-Player.attack(Demon)
+Slug = Character("Slug", 10, rock, None)

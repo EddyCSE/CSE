@@ -15,11 +15,6 @@ class Player(object):
         name_of_room = getattr(self.current_location, direction)
         return globals()[name_of_room]
 
-    #  def find_nearest_enemy(self):
-    #      if enemy
-
-    #  def find_nearest_tool(self):
-
 
 class Room(object):
     def __init__(self, name, north=None, east=None, south=None, west=None, description=(), items=None, enemy=None):
@@ -88,7 +83,7 @@ class Potion(Item):
 
 class HealthPotion(Potion):
     def __init__(self):
-        super(HealthPotion, self).__init__("Health Potion", 50, 0, 0)
+        super(HealthPotion, self).__init__("Health Potion", 50, 0, 3)
 
     def drink_health_potion(self):
         self.amount -= 1
@@ -97,7 +92,7 @@ class HealthPotion(Potion):
 
 class ShieldPotion(Potion):
     def __init__(self):
-        super(ShieldPotion, self).__init__("Shield Potion", 0, 50, 0)
+        super(ShieldPotion, self).__init__("Shield Potion", 0, 50, 3)
 
     def drink_shield_potion(self):
         self.amount -= 1
@@ -107,7 +102,7 @@ class ShieldPotion(Potion):
 
 class LifePotion(Potion):
     def __init__(self):
-        super(LifePotion, self).__init__("Life Potion", 50, 50, 0)
+        super(LifePotion, self).__init__("Life Potion", 50, 50, 3)
 
     def drink_life_potion(self):
         self.amount -= 1
@@ -222,48 +217,60 @@ OUT = Room("-=-OUT-=-", None, None, None, None, "You've made it out through skil
                                                 "Congrats, you beat the game.", None)
 YOUR_CELL = Room("-Your Cell-", "HALLWAY1", None, None, None, "An abandoned cell... you don't know how you got here,"
                                                               " but you need to escape."
-                                                              "Your cell door is on the north wall.", rock)
+                                                              "Your cell door is on the north wall."
+                                                              "", Rock())
 UNKNOWN_CELL = Room("- /= --uNkNown cEll- /=-", "OUT", None, "HALLWAY2", None, "You managed to get in and there's an "
-                                                                               "escape hole", chestpiece)
+                                                                               "escape hole. Metal chestpiece nearby"
+                                                                               "", Chestpiece())
 HALLWAY1 = Room("-East Hallway-", "SHOWER_ROOM", "SECURITY_ROOM2", "YOUR_CELL", "HALLWAY2", "There is a long hallway,"
                                                                                             " breezes coming left and "
                                                                                             "right with a door north "
-                                                                                            "of you.", dagger)
-SHOWER_ROOM = Room("-Shower Room-", None, None, "HALLWAY1", None, "A shower room, none of the"
-                                                                  " water is working.", metalbeam)
+                                                                                            "of you. Dagger nearby"
+                                                                                            "", Dagger())
+SHOWER_ROOM = Room("-Shower Room-", None, None, "HALLWAY1", None, "A shower room, none of the water is working."
+                                                                  " A metal beam nearby", MetalBeam())
 HALLWAY2 = Room("-West Hallway-", "UNKNOWN_CELL", "HALLWAY1", "WOMENS_CELL", "SECURITY_ROOM", "There is a long hallway,"
                                                                                               " there's more cells "
                                                                                               "north and south of you. "
                                                                                               "It looks like there "
                                                                                               "were stairs, but it's"
-                                                                                              " all destroyed", None)
+                                                                                              " all destroyed.", None)
 WOMENS_CELL = Room("-Women's Cell", "HALLWAY2", None, None, None, "A cell with nothing or no"
-                                                                  " one in here...", legendary_pistol)
+                                                                  " one in here..."
+                                                                  " A Golden Pistol nearby", LegendaryPistol())
 SECURITY_ROOM = Room("-West Security Office-", "WARDENS_OFFICE", "HALLWAY2", "NURSERY", "ENTRANCE", "Seems like nothing"
                                                                                                     " works in here. "
                                                                                                     "Doors north, "
                                                                                                     "south, and west."
                                                                                                     "", None)
 NURSERY = Room("-Nursery-", "SECURITY_ROOM", None, None, None, "The area the nurse would be, "
-                                                               "kinda scary like always.", arm_shield)
+                                                               "kinda scary like always. "
+                                                               "An arm shield nearby.", ArmShield())
 WARDENS_OFFICE = Room("-Warden's Office-", None, None, "SECURITY_ROOM", None, "The Warden's "
-                                                                              "room, spoopy.", makeshiftsword)
+                                                                              "room, looks like a strong entity"
+                                                                              " lived here. "
+                                                                              "Makeshift Sword nearby.", MakeshiftSword())
 ENTRANCE = Room("-Entrance-", None, "SECURITY_ROOM", None, None, "The exit/entrance, it's all boarded up, can't"
-                                                                 " seem to ever get through.", screwdriver)
+                                                                 " seem to ever get through. "
+                                                                 "A Screwdriver nearby.", Screwdriver())
 SECURITY_ROOM2 = Room("-East Security Room-", None, "CAFETERIA", None, "HALLWAY1", "A contraband area, nothing is "
                                                                                    "working. A cafeteria is seen"
-                                                                                   " east.", helmet)
+                                                                                   " east. "
+                                                                                   "Helmet nearby.", Helmet())
 CAFETERIA = Room("-Cafeteria-", "COURT_YARD", "KITCHEN", "LIBRARY", "SECURITY_ROOM2", "Lots of spoiled food is here. "
                                                                                       "Open areas north, east,"
                                                                                       " and south.", None)
 COURT_YARD = Room("-Court Yard-", None, None, "CAFETERIA", None, "Basketball, weights, "
-                                                                 "and barbed wire located here.", pickaxe)
-KITCHEN = Room("-Kitchen-", None, None, None, "CAFETERIA", "Utensils here and a horrible smell.", leggings)
+                                                                 "and barbed wire located here."
+                                                                 " Pickaxe nearby.", Pickaxe())
+KITCHEN = Room("-Kitchen-", None, None, None, "CAFETERIA", "Utensils here and a horrible smell. "
+                                                           "Leggings nearby.", Leggings())
 LIBRARY = Room("-Library-", "CAFETERIA", None, None, "PHONE_ROOM", "Books and 'knowledge here. One of the books have "
                                                                    "been written on it. It reads 'Open the locked"
-                                                                   " cell...' ", boots)
+                                                                   " cell...' Boots nearby.", Boots())
 PHONE_ROOM = Room("-Phone Room-", None, "LIBRARY", None, None, "This is where you call your family, "
-                                                               "none of the phones are working. :/", crowbar)
+                                                               "none of the phones are working. :/ "
+                                                               "Crowbar nearby.", Crowbar())
 
 playing = True
 directions = ['north', 'east', 'south', 'west']
@@ -275,6 +282,12 @@ player = Player(YOUR_CELL)
 while playing:
     print(player.current_location.name)
     print(player.current_location.description)
+
+    try:
+        if player.current_location.items.name: = None
+        print("There is a %s nearby" % player.current_location.items.name)
+    except KeyError:
+        print("Nothing useful here")
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
@@ -285,30 +298,5 @@ while playing:
         except KeyError:
             print("I can't go that way")
 
-    else:
-        print("Command Not Found")
-
-while playing:
-    command = input(">_")
-    if command.lower() in ['q', 'quit', 'exit']:
-        playing = False
-    elif command.lower() in actions:
-        try:
-            attack = Character.take_damage
-        except KeyError:
-            print("I can't do that")
-    else:
-        print("Command Not Found")
-
-while playing:
-    command = input(">_")
-    if command.lower() in ['q', 'quit', 'exit']:
-        playing = False
-    elif command.lower() in pick_up:
-        try:
-            if Item in player.current_location:
-                
-        except KeyError:
-            print("I can't do that")
     else:
         print("Command Not Found")

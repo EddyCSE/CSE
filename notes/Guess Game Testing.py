@@ -232,7 +232,34 @@ player = Player(YOUR_CELL)
 
 Demon.attack(Slug)
 
-# 1. Put items in room
-# 2. Show items in room
-# 3. Pick up item
-# 4. Use item
+'''
+while playing:
+    command = input(">_")
+    if command.lower() in ['q', 'quit', 'exit']:
+        playing = False
+    elif command.lower() in actions:
+        try:
+            attack = Character.take_damage
+        except KeyError:
+            print("I can't do that")
+    else:
+        print("Command Not Found")
+
+while playing:
+    command = input(">_")
+    if command.lower() in ['q', 'quit', 'exit']:
+        playing = False
+    elif command.lower() in pick_up:
+        try:
+            if Item in player.current_location:
+                
+        except KeyError:
+            print("I can't do that")
+    else:
+        print("Command Not Found")
+'''
+
+# 1. Put items in room - Done
+# 2. Show items in room - Done
+# 3. Pick up item -
+# 4. Use item -
