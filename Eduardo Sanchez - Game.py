@@ -4,9 +4,11 @@ class Item(object):
 
 
 class Player(object):
-    def __init__(self, starting_location):
+    def __init__(self, starting_location, health, shield):
         self.current_location = starting_location
         self.inventory = []
+        self.health = health
+        self.shield = shield
 
     def move(self, new_location):
         self.current_location = new_location
@@ -17,9 +19,11 @@ class Player(object):
 
 
 class Room(object):
-    def __init__(self, name, north=None, east=None, south=None, west=None, description=(), items=None, enemy=None):
+    def __init__(self, name, north=None, east=None, south=None, west=None, description=(), items=None, character=None):
         if items is None:
             items = []
+        if character is None:
+            pass
         self.name = name
         self.north = north
         self.east = east
@@ -27,7 +31,6 @@ class Room(object):
         self.west = west
         self.description = description
         self.items = items
-        self.enemy = enemy
 
 
 class Weapon(Item):
@@ -306,13 +309,15 @@ directions = ['north', 'east', 'south', 'west']
 actions = ['attack', 'a', 'block', 'b']
 pick_up = ['pick up']
 
-player = Player(YOUR_CELL)
+player = Player(YOUR_CELL, 100, 0)
 
 while playing:
     print(player.current_location.name)
+    print("You have %s health" % player.health)
+    print("You have %s shields" % player.shield)
     print(player.current_location.description)
     print("There is a %s nearby." % player.current_location.items.name)
-    print("There is a %s wanting to fight." % player.current_location.enemy.name)
+    print("There is a %s wanting to fight." % player.current_location.Character.name)
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
