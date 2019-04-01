@@ -306,8 +306,8 @@ PHONE_ROOM = Room("-Phone Room-", None, "LIBRARY", None, None, "This is where yo
 
 playing = True
 directions = ['north', 'east', 'south', 'west']
-actions = ['attack', 'a', 'block', 'b']
-pick_up = ['pick up']
+inventory = ['inventory', 'i']
+pick_up = ['pick up', 'grab']
 
 player = Player(YOUR_CELL, 100, 0)
 
@@ -316,19 +316,34 @@ while playing:
     print("You have %s health" % player.health)
     print("You have %s shields" % player.shield)
     print(player.current_location.description)
+
     try:
         print("There is a %s nearby." % player.current_location.items.name)
     except AttributeError:
         pass
-    print("There is a %s wanting to fight." % player.current_location.character.name)
+
+    try:
+        print("There is a %s wanting to fight." % player.current_location.character.name)
+    except AttributeError:
+        pass
+
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
+
     elif command.lower() in directions:
         try:
             next_room = player.find_next_room(command)
             player.move(next_room)
         except KeyError:
             print("I can't go that way")
+
+    elif command.lower() in inventory:
+        print("You inventory:")
+        print(list(player.inventory))
+    elif command.lower() in pick_up:
+        print("You picked up %s" % player.current_location.item)
+        player.inventory.append(player.current_location.item)
+
     else:
         print("Command Not Found")
