@@ -22,8 +22,9 @@ class Room(object):
     def __init__(self, name, north=None, east=None, south=None, west=None, description=(), items=None, character=None):
         if items is None:
             items = []
-        self.character = character
-        self.character = Character
+        if character is None:
+            character = []
+        self.character = Enemy
         self.name = name
         self.north = north
         self.east = east
@@ -31,6 +32,7 @@ class Room(object):
         self.west = west
         self.description = description
         self.items = items
+        self.character = character
 
 
 class Weapon(Item):
@@ -179,7 +181,7 @@ class Screwdriver(Tool):
         super(Screwdriver, self).__init__("Screwdriver")
 
 
-class Character(object):
+class Enemy(object):
     def __init__(self, name: str, health: int, weapon, armor):
         self.name = name
         self.health = health
@@ -230,79 +232,79 @@ crowbar = Tool("A Crowbar")  # Added
 screwdriver = Tool("A Screwdriver")  # Added
 
 # Characters
-Demon = Character("Demon", 100, enemy_sword, helmet)
-Demon1 = Character("Demon", 100, enemy_sword, helmet)
-Demon2 = Character("Demon", 100, enemy_sword, helmet)
-Demon3 = Character("Demon", 100, enemy_sword, helmet)
-Demon4 = Character("Demon", 100, enemy_sword, helmet)
-Slug = Character("Slug", 10, enemy_fists, None)
-Slug1 = Character("Slug", 10, enemy_fists, None)
-Slug2 = Character("Slug", 10, enemy_fists, None)
-Slug3 = Character("Slug", 10, enemy_fists, None)
-Slug4 = Character("Slug", 10, enemy_fists, None)
-Warden = Character("Warden", 300, warden_sword, Chestpiece)
+Demon = Enemy("Demon", 50, enemy_sword, helmet)  # Added
+Demon1 = Enemy("Demon", 50, enemy_sword, helmet)  # Added
+Demon2 = Enemy("Demon", 50, enemy_sword, helmet)  # Added
+Demon3 = Enemy("Demon", 50, enemy_sword, helmet)  # Added
+Demon4 = Enemy("Demon", 50, enemy_sword, helmet)  # Added
+Slug = Enemy("Slug", 10, enemy_fists, None)  # Added
+Slug1 = Enemy("Slug", 10, enemy_fists, None)  # Added
+Slug2 = Enemy("Slug", 10, enemy_fists, None)  # Added
+Slug3 = Enemy("Slug", 10, enemy_fists, None)  # Added
+Slug4 = Enemy("Slug", 10, enemy_fists, None)  # Added
+Warden = Enemy("Warden", 300, warden_sword, Chestpiece)  # Added
 
 OUT = Room("-=-OUT-=-", None, None, None, None, "You've made it out through skill and intelligence."
                                                 " You now just need to find civilization and get your way back home. "
-                                                "Congrats, you beat the game.", None)
+                                                "Congrats, you beat the game.", None, None)
 YOUR_CELL = Room("-Your Cell-", "HALLWAY1", None, None, None, "An abandoned cell... you don't know how you got here,"
                                                               " but you need to escape."
                                                               "Your cell door is on the north wall."
-                                                              "", Rock())
+                                                              "", Rock(), Slug)
 UNKNOWN_CELL = Room("- /= --uNkNown cEll- /=-", "OUT", None, "HALLWAY2", None, "You managed to get in and there's an "
                                                                                "escape hole. Metal chestpiece nearby"
-                                                                               "", Chestpiece())
+                                                                               "", Chestpiece(), Demon)
 HALLWAY1 = Room("-East Hallway-", "SHOWER_ROOM", "SECURITY_ROOM2", "YOUR_CELL", "HALLWAY2", "There is a long hallway,"
                                                                                             " breezes coming left and "
                                                                                             "right with a door north "
                                                                                             "of you. Dagger nearby"
-                                                                                            "", Dagger())
+                                                                                            "", Dagger(), Slug)
 SHOWER_ROOM = Room("-Shower Room-", None, None, "HALLWAY1", None, "A shower room, none of the water is working."
-                                                                  " A metal beam nearby", MetalBeam())
+                                                                  " A metal beam nearby", MetalBeam(), Slug1)
 HALLWAY2 = Room("-West Hallway-", "UNKNOWN_CELL", "HALLWAY1", "WOMENS_CELL", "SECURITY_ROOM", "There is a long hallway,"
                                                                                               " there's more cells "
                                                                                               "north and south of you. "
                                                                                               "It looks like there "
                                                                                               "were stairs, but it's"
                                                                                               " all destroyed."
-                                                                                              "", None)
+                                                                                              "", None, Slug2)
 WOMENS_CELL = Room("-Women's Cell", "HALLWAY2", None, None, None, "A cell with nothing or no"
                                                                   " one in here..."
-                                                                  " A Golden Pistol nearby", LegendaryPistol())
+                                                                  " A Golden Pistol nearby", LegendaryPistol(), Warden)
 SECURITY_ROOM = Room("-West Security Office-", "WARDENS_OFFICE", "HALLWAY2", "NURSERY", "ENTRANCE", "Seems like nothing"
                                                                                                     " works in here. "
                                                                                                     "Doors north, "
                                                                                                     "south, and west."
-                                                                                                    "", None)
+                                                                                                    "", None, Demon2)
 NURSERY = Room("-Nursery-", "SECURITY_ROOM", None, None, None, "The area the nurse would be, "
                                                                "kinda scary like always. "
-                                                               "An arm shield nearby.", ArmShield())
+                                                               "An arm shield nearby.", ArmShield(), Slug3)
 WARDENS_OFFICE = Room("-Warden's Office-", None, None, "SECURITY_ROOM", None, "The Warden's "
                                                                               "room, looks like a strong entity"
                                                                               " lived here. "
                                                                               "Makeshift Sword nearby."
-                                                                              "", MakeshiftSword())
+                                                                              "", MakeshiftSword(), Demon1)
 ENTRANCE = Room("-Entrance-", None, "SECURITY_ROOM", None, None, "The exit/entrance, it's all boarded up, can't"
                                                                  " seem to ever get through. "
-                                                                 "A Screwdriver nearby.", Screwdriver())
+                                                                 "A Screwdriver nearby.", Screwdriver(), Slug)
 SECURITY_ROOM2 = Room("-East Security Room-", None, "CAFETERIA", None, "HALLWAY1", "A contraband area, nothing is "
                                                                                    "working. A cafeteria is seen"
                                                                                    " east. "
-                                                                                   "Helmet nearby.", Helmet())
+                                                                                   "Helmet nearby.", Helmet(), None)
 CAFETERIA = Room("-Cafeteria-", "COURT_YARD", "KITCHEN", "LIBRARY", "SECURITY_ROOM2", "Lots of spoiled food is here. "
                                                                                       "Open areas north, east,"
-                                                                                      " and south.", None)
+                                                                                      " and south.", None, Slug4)
 COURT_YARD = Room("-Court Yard-", None, None, "CAFETERIA", None, "Basketball, weights, "
                                                                  "and barbed wire located here."
-                                                                 " Pickaxe nearby.", Pickaxe())
+                                                                 " Pickaxe nearby.", Pickaxe(), Demon3)
 KITCHEN = Room("-Kitchen-", None, None, None, "CAFETERIA", "Utensils here and a horrible smell. "
-                                                           "Leggings nearby.", Leggings())
+                                                           "Leggings nearby.", Leggings(), None)
 LIBRARY = Room("-Library-", "CAFETERIA", None, None, "PHONE_ROOM", "Books and 'knowledge here. One of the books have "
                                                                    "been written on it. It reads 'Open the locked"
-                                                                   " cell...' Boots nearby.", Boots())
+                                                                   " cell...' Boots nearby.", Boots(), None)
 PHONE_ROOM = Room("-Phone Room-", None, "LIBRARY", None, None, "This is where you call your family, "
                                                                "none of the phones are working. :/ "
-                                                               "Crowbar nearby.", Crowbar())
+                                                               "Crowbar nearby.", Crowbar(), Demon4)
 
 playing = True
 directions = ['north', 'east', 'south', 'west']
@@ -323,7 +325,7 @@ while playing:
         pass
 
     try:
-        print("There is a %s wanting to fight." % player.current_location.character.name)
+        print("There is a %s wanting to fight." % player.current_location.enemy.name)
     except AttributeError:
         pass
 
@@ -339,11 +341,13 @@ while playing:
             print("I can't go that way")
 
     elif command.lower() in inventory:
-        print("You inventory:")
+        print("Your inventory:")
         print(list(player.inventory))
+        print("---------------------------")
     elif command.lower() in pick_up:
         print("You picked up %s" % player.current_location.item)
         player.inventory.append(player.current_location.item)
-
+        print(list(player.inventory))
+        player.current_location.item = None
     else:
         print("Command Not Found")
