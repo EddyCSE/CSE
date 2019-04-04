@@ -19,11 +19,11 @@ class Player(object):
 
 
 class Room(object):
-    def __init__(self, name, north=None, east=None, south=None, west=None, description=(), items=None, character=None):
+    def __init__(self, name, north=None, east=None, south=None, west=None, description=(), items=None, enemy=None):
         if items is None:
             items = []
-        if character is None:
-            character = []
+        if enemy is None:
+            enemy = []
         self.character = Enemy
         self.name = name
         self.north = north
@@ -32,7 +32,7 @@ class Room(object):
         self.west = west
         self.description = description
         self.items = items
-        self.character = character
+        self.enemy = enemy
 
 
 class Weapon(Item):
@@ -210,9 +210,9 @@ dagger = Weapon("A Dagger", 25, 30)  # Added
 makeshiftsword = Weapon("MakeshiftSword", 40, 10)  # Added
 legendary_pistol = Weapon("Golden Pistol", 150, 10)  # Added
 fists = Weapon("Fists", 1, 100000000)  # Added
-enemy_fists = Weapon("Fists", 10, 100000000)
-warden_sword = Weapon("Warden's sword", 50, 100000000)
-enemy_sword = Weapon("Sword", 25, 100000000)
+enemy_fists = Weapon("Fists", 10, 100000000)  # Added
+warden_sword = Weapon("Warden's sword", 50, 100000000)  # Added
+enemy_sword = Weapon("Sword", 25, 100000000)  # Added
 
 # Armor
 chestpiece = Armor("A Metal Chestpiece", 100)  # Added
@@ -323,10 +323,8 @@ while playing:
     except AttributeError:
         pass
 
-    try:
+    if player.current_location.enemy is not None:
         print("There is a %s wanting to fight." % player.current_location.enemy.name)
-    except AttributeError:
-        pass
 
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
@@ -352,9 +350,11 @@ while playing:
             print("---------------------------")
             pass
         else:
+            print("---------------------------")
             print("You picked up %s" % player.current_location.items.name)
             player.inventory.append(player.current_location.items.name)
             print(list(player.inventory))
+            print("---------------------------")
             player.current_location.items = None
 
     else:
