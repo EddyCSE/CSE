@@ -309,6 +309,7 @@ playing = True
 directions = ['north', 'east', 'south', 'west']
 inventory = ['inventory', 'i']
 pick_up = ['pick up', 'grab']
+attack = ['attack', 'hit', 'slash']
 
 player = Player(YOUR_CELL, 100, 0)
 
@@ -356,6 +357,9 @@ while playing:
             print(list(player.inventory))
             print("---------------------------")
             player.current_location.items = None
+
+    elif command.lower() in attack:
+
 
     else:
         print("Command Not Found")
