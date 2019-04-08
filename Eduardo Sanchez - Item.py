@@ -182,6 +182,11 @@ class Character(object):
         print("%s attacks %s for %d damage." % (self.name, target.name, self.weapon.damage))
         target.take_damage(self.weapon.damage)
 
+    def die(self):
+        if self.health >= 0:
+            print("Your enemy has died has died")
+            Room.enemy = None
+
 
 # Weapons
 rock = Weapon("A Rock", 5, 15)  # Added

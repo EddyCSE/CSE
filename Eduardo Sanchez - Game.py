@@ -4,11 +4,13 @@ class Item(object):
 
 
 class Player(object):
-    def __init__(self, starting_location, health, shield):
+    def __init__(self, starting_location, health, shield, name, weapon):
+        self.name = name
         self.current_location = starting_location
         self.inventory = []
         self.health = health
         self.shield = shield
+        self.weapon = weapon
 
     def move(self, new_location):
         self.current_location = new_location
@@ -16,6 +18,20 @@ class Player(object):
     def find_next_room(self, direction):
         name_of_room = getattr(self.current_location, direction)
         return globals()[name_of_room]
+
+    def take_damage(self, damage: int):
+        if self.shield.defense > damage:
+            print("But no damage is done because of armor overpowering the weak weapon.")
+        elif self.health <= 0:
+            print("You have died")
+            return
+        else:
+            self.health -= damage - self.shield.defense
+            print("%s has %d health left." % (self.name, self.health))
+
+    def attack(self, target):
+        print("%s attacks %s for %d damage." % (self.name, target.name, self.weapon.damage))
+        target.take_damage(self.weapon.damage)
 
 
 class Room(object):
@@ -311,13 +327,16 @@ inventory = ['inventory', 'i']
 pick_up = ['pick up', 'grab']
 attack = ['attack', 'hit', 'slash']
 
-player = Player(YOUR_CELL, 100, 0)
+player = Player(YOUR_CELL, 100, 0, "You", Fists)
 
 while playing:
+    print("---------------------------")
     print(player.current_location.name)
     print("You have %s health" % player.health)
     print("You have %s shields" % player.shield)
+    print("You have a %s equipped" % player.weapon)
     print(player.current_location.description)
+    print("---------------------------")
 
     try:
         print("There is a %s nearby." % player.current_location.items.name)
@@ -358,8 +377,9 @@ while playing:
             print("---------------------------")
             player.current_location.items = None
 
-    elif command.lower() in attack:
-
-
     else:
         print("Command Not Found")
+
+'''
+    elif command.lower() in attack:
+'''
