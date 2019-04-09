@@ -73,6 +73,21 @@ class LegendaryPistol(Weapon):
         super(LegendaryPistol, self).__init__("Legendary Pistol", 150, 10)
 
 
+class EnemyFists(Weapon):
+    def __init__(self):
+        super(EnemyFists, self).__init__("Fists", 10, 100000000)
+
+
+class WardenSword(Weapon):
+    def __init__(self):
+        super(WardenSword, self).__init__("Warden's Sword", 50, 100000000)
+
+
+class EnemySword(Weapon):
+    def __init__(self):
+        super(EnemySword, self).__init__("Enemy Sword", 25, 100000000)
+
+
 class Potion(Item):
     def __init__(self, name, heal, shield, amount):
         super(Potion, self).__init__(name)
@@ -195,6 +210,9 @@ dagger = Weapon("A Dagger", 25, 30)  # Added
 makeshiftsword = Weapon("MakeshiftSword", 40, 10)  # Added
 legendary_pistol = Weapon("Golden Pistol", 150, 10)  # Added
 fists = Weapon("Fists", 1, 100000000)  # Added
+enemy_fists = Weapon("Fists", 10, 100000000)  # Added
+warden_sword = Weapon("Warden's sword", 50, 100000000)  # Added
+enemy_sword = Weapon("Sword", 25, 100000000)  # Added
 
 # Armor
 chestpiece = Armor("A Metal Chestpiece", 100)  # Added

@@ -327,14 +327,14 @@ inventory = ['inventory', 'i']
 pick_up = ['pick up', 'grab']
 attack = ['attack', 'hit', 'slash']
 
-player = Player(YOUR_CELL, 100, 0, "You", Fists)
+player = Player(YOUR_CELL, 100, 0, "You", Fists())
 
 while playing:
     print("---------------------------")
     print(player.current_location.name)
     print("You have %s health" % player.health)
     print("You have %s shields" % player.shield)
-    print("You have a %s equipped" % player.weapon)
+    print("You have a %s equipped" % player.weapon.name)
     print(player.current_location.description)
     print("---------------------------")
 
