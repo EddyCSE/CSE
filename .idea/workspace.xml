@@ -16,7 +16,7 @@
     <SUITE FILE_PATH="coverage/CSE$testing_page.coverage" NAME="testing page Coverage Results" MODIFIED="1547572381056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$Semester_2_Notes.coverage" NAME="Semester 2 Notes Coverage Results" MODIFIED="1549044818331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Eduardo_Sanchez___Dictionary_World_Map.coverage" NAME="Eduardo Sanchez - Dictionary World Map Coverage Results" MODIFIED="1552670724516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSE$Eduardo_Sanchez___Game.coverage" NAME="Eduardo Sanchez - Game Coverage Results" MODIFIED="1554828297543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$Eduardo_Sanchez___Game.coverage" NAME="Eduardo Sanchez - Game Coverage Results" MODIFIED="1554914690683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Object_Notes.coverage" NAME="Object Notes Coverage Results" MODIFIED="1550252022278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$World_Map_OOP.coverage" NAME="World Map OOP Coverage Results" MODIFIED="1551287828261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Eduardo_Sanchez___World_Map_OOP.coverage" NAME="Eduardo Sanchez - World Map OOP Coverage Results" MODIFIED="1552926103775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -50,7 +50,7 @@
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.35" value="1" />
-          <entry key="project.open.time.38" value="2" />
+          <entry key="project.open.time.38" value="3" />
           <entry key="project.open.time.39" value="3" />
           <entry key="project.open.time.40" value="2" />
           <entry key="project.open.time.45" value="1" />
@@ -81,59 +81,50 @@
           <entry key="project.open.time.81" value="1" />
           <entry key="project.open.time.82" value="3" />
           <entry key="project.open.time.85" value="2" />
-          <entry key="project.opened" value="64" />
+          <entry key="project.opened" value="65" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="2" value="2" />
-          <entry key="py" value="67" />
+          <entry key="py" value="68" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="67" />
+          <entry key="Python" value="68" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Eduardo Sanchez - Dictionary World Map" value="2" />
           <entry key="dummy" value="28" />
-          <entry key="py" value="24792" />
+          <entry key="py" value="25011" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="30" />
-          <entry key="Python" value="24792" />
+          <entry key="Python" value="25011" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - Item.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="211" column="46" selection-start-line="211" selection-start-column="46" selection-end-line="211" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - Game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="336" column="55" selection-start-line="336" selection-start-column="55" selection-end-line="336" selection-end-column="55" />
+            <state relative-caret-position="213">
+              <caret line="360" column="24" lean-forward="true" selection-start-line="360" selection-start-column="24" selection-end-line="360" selection-end-column="24" />
               <folding>
                 <element signature="e#7647#7897#0" />
                 <element signature="e#7973#8284#0" />
                 <element signature="e#8379#8594#0" />
                 <element signature="e#8709#9171#0" />
                 <element signature="e#9255#9370#0" />
-                <element signature="e#9486#10194#0" />
+                <element signature="e#9496#10205#0" />
                 <element signature="e#10275#10455#0" />
                 <element signature="e#10584#11061#0" />
                 <element signature="e#11140#11328#0" />
@@ -145,31 +136,7 @@
                 <element signature="e#13175#13275#0" />
                 <element signature="e#13362#13607#0" />
                 <element signature="e#13687#13892#0" />
-                <marker date="1554828297403" expanded="true" signature="5902:5903" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - World Map OOP.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
-              <folding>
-                <element signature="e#1078#1329#0" />
-                <element signature="e#1411#1656#0" />
-                <element signature="e#1755#1887#0" />
-                <element signature="e#1981#2348#0" />
-                <element signature="e#2558#3168#0" />
-                <element signature="e#3380#3754#0" />
-                <element signature="e#4049#4190#0" />
-                <element signature="e#4275#4427#0" />
-                <element signature="e#4515#4759#0" />
-                <element signature="e#5045#5291#0" />
-                <element signature="e#5356#5494#0" />
-                <marker date="1552322573327" expanded="true" signature="19:24" ph="..." />
-                <marker date="1552322573327" expanded="true" signature="1028:1030" ph="..." />
+                <marker date="1554914421472" expanded="true" signature="5927:5928" ph="..." />
               </folding>
             </state>
           </provider>
@@ -256,6 +223,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\8k6h\Documents\GitHub\CSE" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -416,7 +388,7 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" weight="0.32980332" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34918034" />
@@ -546,16 +518,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
           <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <element signature="e#511#562#0" />
-            <element signature="e#598#649#0" />
-            <element signature="e#682#745#0" />
-            <element signature="e#1096#1180#0" />
-            <marker date="1551465053581" expanded="true" signature="22:27" ph="..." />
-            <marker date="1551465053581" expanded="true" signature="99:104" ph="..." />
-            <marker date="1551465053581" expanded="false" signature="673:751" ph="..." />
-            <marker date="1551465053581" expanded="true" signature="865:870" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -566,9 +528,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - Item.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3587">
+          <caret line="211" column="46" selection-start-line="211" selection-start-column="46" selection-end-line="211" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - World Map OOP.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="714">
           <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
           <folding>
             <element signature="e#1078#1329#0" />
@@ -588,24 +557,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - Item.py">
+    <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - Game - Backup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="211" column="46" selection-start-line="211" selection-start-column="46" selection-end-line="211" selection-end-column="46" />
+        <state relative-caret-position="136">
+          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - Game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="336" column="55" selection-start-line="336" selection-start-column="55" selection-end-line="336" selection-end-column="55" />
+        <state relative-caret-position="213">
+          <caret line="360" column="24" lean-forward="true" selection-start-line="360" selection-start-column="24" selection-end-line="360" selection-end-column="24" />
           <folding>
             <element signature="e#7647#7897#0" />
             <element signature="e#7973#8284#0" />
             <element signature="e#8379#8594#0" />
             <element signature="e#8709#9171#0" />
             <element signature="e#9255#9370#0" />
-            <element signature="e#9486#10194#0" />
+            <element signature="e#9496#10205#0" />
             <element signature="e#10275#10455#0" />
             <element signature="e#10584#11061#0" />
             <element signature="e#11140#11328#0" />
@@ -617,7 +586,7 @@
             <element signature="e#13175#13275#0" />
             <element signature="e#13362#13607#0" />
             <element signature="e#13687#13892#0" />
-            <marker date="1554828297403" expanded="true" signature="5902:5903" ph="..." />
+            <marker date="1554914421472" expanded="true" signature="5927:5928" ph="..." />
           </folding>
         </state>
       </provider>

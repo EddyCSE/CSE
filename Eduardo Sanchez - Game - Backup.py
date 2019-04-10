@@ -1,4 +1,3 @@
-#  Attacking doesnt work
 class Item(object):
     def __init__(self, name):
         self.name = name
@@ -326,7 +325,6 @@ PHONE_ROOM = Room("-Phone Room-", None, "LIBRARY", None, None, "- This is where 
 
 playing = True
 directions = ['north', 'east', 'south', 'west']
-short_directions = ['n', 'e', 's', 'w']
 inventory = ['inventory', 'i']
 pick_up = ['pick up', 'grab']
 attack = ['attack', 'hit', 'slash']
@@ -360,10 +358,6 @@ while playing:
             player.move(next_room)
         except KeyError:
             print("I can't go that way")
-
-    elif command.lower() in short_directions:
-        pos = short_directions.index(command.lower())
-        command = directions[pos]
 
     elif command.lower() in inventory:
         print("---------------------------")
