@@ -263,7 +263,8 @@ Warden = Enemy("Warden", 300, warden_sword, Chestpiece)  # Added
 OUT = Room("-=-OUT-=-", None, None, None, None, "- You've made it out through skill and intelligence."
                                                 " You now just need to find civilization and get your way back home. "
                                                 "Congrats, you beat the game.", None, None)
-YOUR_CELL = Room("-Your Cell-", "HALLWAY1", None, None, None, "- An abandoned cell... you don't know how you got here,"
+YOUR_CELL = Room("-Your Cell-", "HALLWAY1", None, None, None, "- For command list, type 'commands', An abandoned cell"
+                                                              "... you don't know how you got here,"
                                                               " but you need to escape."
                                                               " Your cell door is on the north wall."
                                                               "", Rock(), Slug)
@@ -349,8 +350,15 @@ while playing:
         print("There is a %s wanting to fight." % player.current_location.enemy.name)
 
     command = input(">_")
+
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
+
+    elif command.lower() in ['commands']:
+        print("Commands")
+        print("---------------------------")
+        print("Moving= North, East, South, West")
+        print("Actions= Pick up, Grab, attack, hit, slash, inventory, i ")
 
     elif command.lower() in directions:
         try:
@@ -381,7 +389,3 @@ while playing:
 
     else:
         print("Command Not Found")
-
-'''
-    elif command.lower() in attack:
-'''

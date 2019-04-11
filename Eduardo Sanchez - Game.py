@@ -259,6 +259,7 @@ Slug1 = Enemy("Slug", 10, enemy_fists, None)  # Added
 Slug2 = Enemy("Slug", 10, enemy_fists, None)  # Added
 Slug3 = Enemy("Slug", 10, enemy_fists, None)  # Added
 Slug4 = Enemy("Slug", 10, enemy_fists, None)  # Added
+Slug5 = Enemy("Slug", 10, enemy_fists, None)  # Added
 Warden = Enemy("Warden", 300, warden_sword, Chestpiece)  # Added
 
 OUT = Room("-=-OUT-=-", None, None, None, None, "- You've made it out through skill and intelligence."
@@ -275,9 +276,9 @@ HALLWAY1 = Room("-East Hallway-", "SHOWER_ROOM", "SECURITY_ROOM2", "YOUR_CELL", 
                                                                                             " breezes coming left and "
                                                                                             "right with a door north "
                                                                                             "of you."
-                                                                                            "", Dagger(), Slug)
+                                                                                            "", Dagger(), Slug1)
 SHOWER_ROOM = Room("-Shower Room-", None, None, "HALLWAY1", None, "- A shower room, none of the water is working."
-                                                                  "", MetalBeam(), Slug1)
+                                                                  "", MetalBeam(), Slug2)
 HALLWAY2 = Room("-West Hallway-", "UNKNOWN_CELL", "HALLWAY1", "WOMENS_CELL", "SECURITY_ROOM", "- There is a long"
                                                                                               " hallway,there's more"
                                                                                               " cells north and south"
@@ -285,7 +286,7 @@ HALLWAY2 = Room("-West Hallway-", "UNKNOWN_CELL", "HALLWAY1", "WOMENS_CELL", "SE
                                                                                               "It looks like there "
                                                                                               "were stairs, but it's"
                                                                                               " all destroyed."
-                                                                                              "", None, Slug2)
+                                                                                              "", None, Slug3)
 WOMENS_CELL = Room("-Women's Cell", "HALLWAY2", None, None, None, "- A cell with nothing or no"
                                                                   " one in here..."
                                                                   "", LegendaryPistol(), Warden)
@@ -297,7 +298,7 @@ SECURITY_ROOM = Room("-West Security Office-", "WARDENS_OFFICE", "HALLWAY2", "NU
                                                                                                     "", None, Demon2)
 NURSERY = Room("-Nursery-", "SECURITY_ROOM", None, None, None, "- The area the nurse would be, "
                                                                "kinda scary like always. "
-                                                               "", ArmShield(), Slug3)
+                                                               "", ArmShield(), Slug4)
 WARDENS_OFFICE = Room("-Warden's Office-", None, None, "SECURITY_ROOM", None, "- The Warden's "
                                                                               "room, looks like a strong entity"
                                                                               " lived here. "
@@ -311,7 +312,7 @@ SECURITY_ROOM2 = Room("-East Security Room-", None, "CAFETERIA", None, "HALLWAY1
                                                                                    "Helmet nearby.", Helmet(), None)
 CAFETERIA = Room("-Cafeteria-", "COURT_YARD", "KITCHEN", "LIBRARY", "SECURITY_ROOM2", "- Lots of spoiled food is here. "
                                                                                       "Open areas north, east,"
-                                                                                      " and south.", None, Slug4)
+                                                                                      " and south.", None, Slug5)
 COURT_YARD = Room("-Court Yard-", None, None, "CAFETERIA", None, "- Basketball, weights, "
                                                                  "and barbed wire located here."
                                                                  "", Pickaxe(), Demon3)
@@ -351,8 +352,18 @@ while playing:
         print("There is a %s wanting to fight." % player.current_location.enemy.name)
 
     command = input(">_")
+
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
+
+    elif command.lower() in ['commands']:
+        print("---------------------------")
+        print("Commands:")
+        print("Moving= North, East, South, West")
+        print("Actions= Pick up, Grab, attack, hit, slash, inventory, i ")
+
+    elif command.lower() in attack:
+        player.attack(player.current.location.enemy)
 
     elif command.lower() in directions:
         try:
@@ -360,10 +371,6 @@ while playing:
             player.move(next_room)
         except KeyError:
             print("I can't go that way")
-
-    elif command.lower() in short_directions:
-        pos = short_directions.index(command.lower())
-        command = directions[pos]
 
     elif command.lower() in inventory:
         print("---------------------------")
@@ -387,7 +394,3 @@ while playing:
 
     else:
         print("Command Not Found")
-
-'''
-    elif command.lower() in attack:
-'''
