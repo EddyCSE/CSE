@@ -5,13 +5,16 @@ class Item(object):
 
 
 class Player(object):
-    def __init__(self, starting_location, health, shield, name, weapon):
+    def __init__(self, starting_location, health, shield, name, weapon, lamount, samount, hamount):
         self.name = name
         self.current_location = starting_location
         self.inventory = []
         self.health = health
         self.shield = shield
         self.weapon = weapon
+        self.lamount = lamount
+        self.samount = samount
+        self.hamount = hamount
 
     def move(self, new_location):
         self.current_location = new_location
@@ -33,6 +36,48 @@ class Player(object):
     def attack(self, target):
         print("%s attacks %s for %d damage." % (self.name, target.name, self.weapon.damage))
         target.take_damage(self.weapon.damage)
+
+    def drink_life_potion(self):
+        if self.shield <= 100:
+            print("You are full")
+            pass
+
+        elif self.health <= 100:
+            print("You are full")
+            pass
+        else:
+            if self.lamount <= 0:
+                print("You have no more life potions")
+            else:
+                self.lamount -= 1
+                self.shield += 50
+                self.health += 50
+                print("---------------------------")
+                print("You drink a life potion and feel revived.")
+
+    def drink_shield_potion(self):
+        if self.shield <= 100:
+            print("You are full")
+        else:
+            if self.samount <= 0:
+                print("You have no more shield potions")
+            else:
+                self.samount -= 1
+                self.shield += 50
+                print("---------------------------")
+                print("You drink a defense potion and feel protected.")
+
+    def drink_health_potion(self):
+        if self.health <= 100:
+            print("You are full")
+        else:
+            if self.hamount <= 0:
+                print("You have no more health potions")
+            else:
+                self.hamount -= 1
+                self.health += 50
+                print("---------------------------")
+                print("You drink a health potion and feel regenerated.")
 
 
 class Room(object):
@@ -123,8 +168,12 @@ class HealthPotion(Potion):
         super(HealthPotion, self).__init__("Health Potion", 50, 0, 3)
 
     def drink_health_potion(self):
-        self.amount -= 1
-        print("You drink a health potion and feel regenerated.")
+        if self.amount <= 0:
+            print("You have no more health potions")
+        else:
+            self.amount -= 1
+            self.heal += 50
+            print("You drink a health potion and feel regenerated.")
 
 
 class ShieldPotion(Potion):
@@ -132,9 +181,12 @@ class ShieldPotion(Potion):
         super(ShieldPotion, self).__init__("Shield Potion", 0, 50, 3)
 
     def drink_shield_potion(self):
-        self.amount -= 1
-        self.shield += 50
-        print("You drink a defense potion and feel protected.")
+        if self.amount <= 0:
+            print("You have no more shield potions")
+        else:
+            self.amount -= 1
+            self.shield += 50
+            print("You drink a defense potion and feel protected.")
 
 
 class LifePotion(Potion):
@@ -142,9 +194,13 @@ class LifePotion(Potion):
         super(LifePotion, self).__init__("Life Potion", 50, 50, 3)
 
     def drink_life_potion(self):
-        self.amount -= 1
-        self.shield += 50
-        print("You drink a life potion and feel revived.")
+        if self.amount <= 0:
+            print("You have no more life potions")
+        else:
+            self.amount -= 1
+            self.shield += 50
+            self.heal += 50
+            print("You drink a life potion and feel revived.")
 
 
 class Armor(Item):
@@ -332,7 +388,7 @@ inventory = ['inventory', 'i']
 pick_up = ['pick up', 'grab']
 attack = ['attack', 'hit', 'slash']
 
-player = Player(YOUR_CELL, 100, 0, "You", Fists())
+player = Player(YOUR_CELL, 100, 0, "You", Fists(), 3, 3, 3)
 
 while playing:
     print("---------------------------")
@@ -359,11 +415,9 @@ while playing:
     elif command.lower() in ['commands']:
         print("---------------------------")
         print("Commands:")
-        print("Moving= North, East, South, West")
-        print("Actions= Pick up, Grab, attack, hit, slash, inventory, i ")
-
-    elif command.lower() in attack:
-        player.attack(player.current.location.enemy)
+        print("Moving= north, east, south, west")
+        print("Actions= pick up, grab, attack, hit, slash, inventory, i ")
+        print("Health= drink health potion, drink shield potion, drink life potion")
 
     elif command.lower() in directions:
         try:
@@ -371,6 +425,24 @@ while playing:
             player.move(next_room)
         except KeyError:
             print("I can't go that way")
+
+    elif command.lower() in ['drink life potion']:
+        try:
+            player.drink_life_potion()
+        except KeyError:
+            print("Can't do that")
+
+    elif command.lower() in ['drink health potion']:
+        try:
+            player.drink_health_potion()
+        except KeyError:
+            print("Can't do that")
+
+    elif command.lower() in ['drink shield potion']:
+        try:
+            player.drink_shield_potion()
+        except KeyError:
+            print("Can't do that")
 
     elif command.lower() in inventory:
         print("---------------------------")
@@ -394,3 +466,7 @@ while playing:
 
     else:
         print("Command Not Found")
+'''
+ elif command.lower() in attack:
+        player.attack(player.current.location.enemy)
+'''
