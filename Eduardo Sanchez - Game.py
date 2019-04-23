@@ -272,7 +272,7 @@ class Enemy(object):
             print("%s has %d health left." % (self.name, self.health))
 
     def attack(self, target):
-        print("%s attacks %s for %d damage." % (self.name, target.name, self.weapon.damage))
+        print("%s attack %s for %d damage." % (self.name, target.name, self.weapon.damage))
         target.take_damage(self.weapon.damage)
 
 
@@ -444,6 +444,10 @@ while playing:
         except KeyError:
             print("Can't do that")
 
+    elif command.lower() in attack:
+        player.attack(player.current_location.enemy)
+        print("You hit %s for %s damage" % player.current_location.enemy, player.weapon.damage)
+
     elif command.lower() in inventory:
         print("---------------------------")
         print("Your inventory:")
@@ -466,7 +470,8 @@ while playing:
 
     else:
         print("Command Not Found")
+
 '''
- elif command.lower() in attack:
-        player.attack(player.current.location.enemy)
+print("You equipped a/an %s" % player.current_location.items)
+player.weapon = player.current_location.items.name
 '''
