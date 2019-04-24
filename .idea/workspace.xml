@@ -18,12 +18,13 @@
     <SUITE FILE_PATH="coverage/CSE$Semester_2_Notes.coverage" NAME="Semester 2 Notes Coverage Results" MODIFIED="1549044818331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$test.coverage" NAME="test Coverage Results" MODIFIED="1555000000031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Eduardo_Sanchez___Dictionary_World_Map.coverage" NAME="Eduardo Sanchez - Dictionary World Map Coverage Results" MODIFIED="1552670724516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSE$Eduardo_Sanchez___Game.coverage" NAME="Eduardo Sanchez - Game Coverage Results" MODIFIED="1556037927704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$Eduardo_Sanchez___Game.coverage" NAME="Eduardo Sanchez - Game Coverage Results" MODIFIED="1556123252058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Object_Notes.coverage" NAME="Object Notes Coverage Results" MODIFIED="1550252022278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$World_Map_OOP.coverage" NAME="World Map OOP Coverage Results" MODIFIED="1551287828261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Eduardo_Sanchez___World_Map_OOP.coverage" NAME="Eduardo Sanchez - World Map OOP Coverage Results" MODIFIED="1552926103775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Guess_Game_Testing.coverage" NAME="Guess Game Testing Coverage Results" MODIFIED="1553100015925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$builtins.coverage" NAME="builtins Coverage Results" MODIFIED="1554136652306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/.PyCharm2018.2/system/python_stubs/-1120166012" />
+    <SUITE FILE_PATH="coverage/CSE$Csv_Notes.coverage" NAME="Csv Notes Coverage Results" MODIFIED="1556123700269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Eduardo_Sanchez___Hangman.coverage" NAME="Eduardo Sanchez - Hangman Coverage Results" MODIFIED="1552670753046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$Inheritance.coverage" NAME="Inheritance Coverage Results" MODIFIED="1551375591185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -55,6 +56,7 @@
           <entry key="project.open.time.38" value="3" />
           <entry key="project.open.time.39" value="3" />
           <entry key="project.open.time.40" value="2" />
+          <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.47" value="1" />
@@ -83,65 +85,84 @@
           <entry key="project.open.time.81" value="1" />
           <entry key="project.open.time.82" value="3" />
           <entry key="project.open.time.85" value="2" />
-          <entry key="project.opened" value="68" />
+          <entry key="project.opened" value="69" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="2" value="2" />
-          <entry key="py" value="71" />
+          <entry key="csv" value="1" />
+          <entry key="py" value="72" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="71" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Python" value="72" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Eduardo Sanchez - Dictionary World Map" value="2" />
           <entry key="dummy" value="28" />
-          <entry key="py" value="26250" />
+          <entry key="py" value="26425" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="30" />
-          <entry key="Python" value="26250" />
+          <entry key="Python" value="26425" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.65885025">
+    <splitter split-orientation="horizontal" split-proportion="0.8217822">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - Game.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="92">
-                  <caret line="465" column="38" lean-forward="true" selection-start-line="465" selection-start-column="38" selection-end-line="465" selection-end-column="38" />
+                <state relative-caret-position="1786">
+                  <caret line="465" column="38" selection-start-line="465" selection-start-column="38" selection-end-line="465" selection-end-column="38" />
                   <folding>
-                    <element signature="e#9599#9851#0" />
-                    <element signature="e#9927#10240#0" />
-                    <element signature="e#10335#10552#0" />
-                    <element signature="e#10667#11131#0" />
-                    <element signature="e#11216#11333#0" />
-                    <element signature="e#11449#12255#0" />
-                    <element signature="e#12336#12518#0" />
-                    <element signature="e#12647#13229#0" />
-                    <element signature="e#13308#13498#0" />
-                    <element signature="e#13598#13903#0" />
-                    <element signature="e#13996#14208#0" />
-                    <element signature="e#14314#14655#0" />
-                    <element signature="e#14759#15005#0" />
-                    <element signature="e#15085#15275#0" />
-                    <element signature="e#15355#15457#0" />
-                    <element signature="e#15544#15791#0" />
-                    <element signature="e#15871#16078#0" />
+                    <element signature="e#9598#9850#0" />
+                    <element signature="e#9926#10239#0" />
+                    <element signature="e#10334#10551#0" />
+                    <element signature="e#10666#11130#0" />
+                    <element signature="e#11215#11332#0" />
+                    <element signature="e#11448#12254#0" />
+                    <element signature="e#12335#12517#0" />
+                    <element signature="e#12646#13228#0" />
+                    <element signature="e#13307#13497#0" />
+                    <element signature="e#13597#13902#0" />
+                    <element signature="e#13995#14207#0" />
+                    <element signature="e#14313#14654#0" />
+                    <element signature="e#14758#15004#0" />
+                    <element signature="e#15084#15274#0" />
+                    <element signature="e#15354#15456#0" />
+                    <element signature="e#15543#15790#0" />
+                    <element signature="e#15870#16077#0" />
                     <marker date="1556037927435" expanded="true" signature="7799:7800" ph="..." />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Book1.csv">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="6867099">
+                  <caret line="403947" lean-forward="true" selection-start-line="403947" selection-end-line="403947" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Csv Notes.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -153,7 +174,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - Game.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="92">
+                <state relative-caret-position="2">
                   <caret line="431" selection-start-line="427" selection-end-line="431" />
                   <folding>
                     <marker date="1556037927435" expanded="true" signature="7799:7800" ph="..." />
@@ -209,6 +230,7 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/Eduardo Sanchez - Game - Backup.py" />
         <option value="$PROJECT_DIR$/Eduardo Sanchez - Game.py" />
+        <option value="$PROJECT_DIR$/Csv Notes.py" />
       </list>
     </option>
   </component>
@@ -219,16 +241,29 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="461" />
-    <option name="y" value="-13" />
-    <option name="width" value="697" />
-    <option name="height" value="735" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1020" />
+    <option name="height" value="708" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CSE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSE" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/8k6h/Documents/GitHub/CSE/Inheritance.py" />
@@ -237,6 +272,9 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\8k6h\Documents\GitHub\CSE" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\8k6h\Documents\GitHub\CSE" />
     </key>
@@ -253,7 +291,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Eduardo Sanchez - Game">
+  <component name="RunManager" selected="Python.Csv Notes">
+    <configuration name="Csv Notes" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CSE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Csv Notes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Eduardo Sanchez - Game - Backup" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -290,28 +350,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eduardo Sanchez - Game.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Eduardo Sanchez - Item" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="CSE" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Eduardo Sanchez - Item.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -365,19 +403,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Eduardo Sanchez - Item" />
       <item itemvalue="Python.Eduardo Sanchez - Game" />
       <item itemvalue="Python.builtins" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.Eduardo Sanchez - Game - Backup" />
+      <item itemvalue="Python.Csv Notes" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Csv Notes" />
         <item itemvalue="Python.Eduardo Sanchez - Game" />
         <item itemvalue="Python.Eduardo Sanchez - Game - Backup" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.builtins" />
-        <item itemvalue="Python.Eduardo Sanchez - Item" />
       </list>
     </recent_temporary>
   </component>
@@ -395,14 +433,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" weight="0.32980332" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.1409396" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46721312" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4141844" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -565,28 +604,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Eduardo Sanchez - Game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="465" column="38" lean-forward="true" selection-start-line="465" selection-start-column="38" selection-end-line="465" selection-end-column="38" />
+        <state relative-caret-position="1786">
+          <caret line="465" column="38" selection-start-line="465" selection-start-column="38" selection-end-line="465" selection-end-column="38" />
           <folding>
-            <element signature="e#9599#9851#0" />
-            <element signature="e#9927#10240#0" />
-            <element signature="e#10335#10552#0" />
-            <element signature="e#10667#11131#0" />
-            <element signature="e#11216#11333#0" />
-            <element signature="e#11449#12255#0" />
-            <element signature="e#12336#12518#0" />
-            <element signature="e#12647#13229#0" />
-            <element signature="e#13308#13498#0" />
-            <element signature="e#13598#13903#0" />
-            <element signature="e#13996#14208#0" />
-            <element signature="e#14314#14655#0" />
-            <element signature="e#14759#15005#0" />
-            <element signature="e#15085#15275#0" />
-            <element signature="e#15355#15457#0" />
-            <element signature="e#15544#15791#0" />
-            <element signature="e#15871#16078#0" />
+            <element signature="e#9598#9850#0" />
+            <element signature="e#9926#10239#0" />
+            <element signature="e#10334#10551#0" />
+            <element signature="e#10666#11130#0" />
+            <element signature="e#11215#11332#0" />
+            <element signature="e#11448#12254#0" />
+            <element signature="e#12335#12517#0" />
+            <element signature="e#12646#13228#0" />
+            <element signature="e#13307#13497#0" />
+            <element signature="e#13597#13902#0" />
+            <element signature="e#13995#14207#0" />
+            <element signature="e#14313#14654#0" />
+            <element signature="e#14758#15004#0" />
+            <element signature="e#15084#15274#0" />
+            <element signature="e#15354#15456#0" />
+            <element signature="e#15543#15790#0" />
+            <element signature="e#15870#16077#0" />
             <marker date="1556037927435" expanded="true" signature="7799:7800" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Book1.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6867099">
+          <caret line="403947" lean-forward="true" selection-start-line="403947" selection-end-line="403947" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Csv Notes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
         </state>
       </provider>
     </entry>
