@@ -30,7 +30,7 @@ print(11 % 4)  # Modulus (Remainder)
 
 # powers
 # What is 2^20?
-print(2 ** 100)
+print(2 * 20)
 
 # Taking input
 name = input("What is your name?")

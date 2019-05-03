@@ -12,8 +12,8 @@ def v(num: str):
     print(num)
     if not has_16_digits(num):
         return False
-    take_last_digit(num)
-    reverse_it(num)
+    new_list = take_last_digit(num)
+    reverse_it(new_list)
     print(Taken_out_word)
 
 
@@ -29,8 +29,9 @@ def take_last_digit(num: str):
     for index in range(len(list_num)):
         list_num[index] = int(list_num[index])
     list_num.pop(15)
-    print(list_num)
     print("Last digit = Y")
+    print(list_num)
+    return list_num
 
 
 def reverse_it(list_num: str):
@@ -40,6 +41,15 @@ def reverse_it(list_num: str):
 
 
 # def multiply_odds(list_num: str):
-
-
+#     pre_odd_num = int(list_num)
+#     if pre_odd_num == [1, 3, 5, 7, 9]:
+#         odd_num = pre_odd_num * 2
+#         if odd_num == [9, 10, 11, 12, 13, 14, 15, 16, 17, 18]:
+#             odd_num -= 9
+#             print(odd_num)
+#             return list_num
+#     else:
+#         pass
+#
+#
 print(v("5431709304959590"))
