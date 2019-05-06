@@ -15,6 +15,7 @@ def v(num: str):
     new_list = take_last_digit(num)
     reverse_it(new_list)
     print(Taken_out_word)
+    multiply_odds(new_list)
 
 
 def has_16_digits(num: str):
@@ -40,16 +41,36 @@ def reverse_it(list_num: str):
     print("Reversing = Y")
 
 
-# def multiply_odds(list_num: str):
-#     pre_odd_num = int(list_num)
-#     if pre_odd_num == [1, 3, 5, 7, 9]:
-#         odd_num = pre_odd_num * 2
-#         if odd_num == [9, 10, 11, 12, 13, 14, 15, 16, 17, 18]:
-#             odd_num -= 9
-#             print(odd_num)
-#             return list_num
-#     else:
-#         pass
-#
-#
+def multiply_odds(list_num: str):
+    odd_num = divisible_by_1(list_num) and divisible_by_3(list_num)
+    new_num = odd_num * 2
+    if new_num > 9:
+        odd_num -= 9
+    else:
+        pass
+    print(odd_num)
+
+
+def divisible_by_1(list_num: str):
+    if list_num % 1 == 0:
+        return True
+    return False
+
+
+def divisible_by_3(list_num: str):
+    if list_num % 3 == 0:
+        return True
+    return False
+
+
 print(v("5431709304959590"))
+
+# pre_odd_num = int(list_num)
+#      if pre_odd_num == [1, 3, 5, 7, 9]:
+#          odd_num = pre_odd_num * 2
+#          if odd_num == [9, 10, 11, 12, 13, 14, 15, 16, 17, 18]:
+#              odd_num -= 9
+#              print(odd_num)
+#              return list_num
+#      else:
+#          pass
