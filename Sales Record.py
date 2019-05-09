@@ -1,10 +1,9 @@
 import csv
-
-
 with open("Sales Records.csv", 'r') as o_csv:
     reader = csv.reader(o_csv)
-    for row in reader:
-        row = row[13]
-        print(row)
+    for column in reader:
+        column = column[13]
+        print(column)
 
-# with open("MyNewFile.csv", 'w', newline='') as new_csv:
+# roww = row[2]
+# if roww = ("Snacks"):
