@@ -203,13 +203,13 @@ while playing:
 
 '''
 import csv
-Item_List = ['Fruits', 'Clothes', 'Meat', 'Beverages', 'Office Supplies', 'Cosmetics', 'Snacks', 'Personal Care',
-             'Household', 'Vegetables', 'Baby Food', 'Cereal']
+Item_List = ['"Fruits"', '"Clothes"', '"Meat"', '"Beverages"', '"Office Supplies"', '"Cosmetics"', '"Snacks"',
+             '"Personal Care"', '"Household"', '"Vegetables"', '"Baby Food"', '"Cereal"']
 Total = 0
 Div = 0
 with open("Sales Records.csv", 'r') as o_csv:
     reader = csv.reader(o_csv)
-    if Item_List == [""]:
+    if Item_List == ():
         for row in reader:
             if row[2] == Item_List[0]:
                 Total += float(row[13])
@@ -219,5 +219,19 @@ with open("Sales Records.csv", 'r') as o_csv:
         Total = 0
         Div = 0
         Item_List.pop(0)
+    else:
+        print("Done")
 
 '''
+
+# Total = 0
+# Div = 0
+#
+# with open("Sales Records.csv", 'r') as o_csv:
+#     reader = csv.reader(o_csv)
+#     for row in reader:
+#         if row[2] == "Fruits":
+#             Total += float(row[13])
+#             Div += 1
+# Average = Total / Div
+# print("Fruits Average = %s" % Average)
