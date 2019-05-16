@@ -1,5 +1,6 @@
 import csv
 
+Item_List = []
 Fruits = 0
 Clothes = 0
 Meat = 0
@@ -12,7 +13,6 @@ Household = 0
 Vegetables = 0
 Baby_Food = 0
 Cereal = 0
-Item_List = []
 
 with open("Sales Records.csv", 'r') as o_csv:
     reader = csv.reader(o_csv)
@@ -42,6 +42,7 @@ with open("Sales Records.csv", 'r') as o_csv:
         if row[2] == "Cereal":
             Cereal += float(row[13])
 
+print("-----------------------------------")
 print("Fruits Total = %s" % Fruits)
 print("Clothes Total = %s" % Clothes)
 print("Meat Total = %s" % Meat)
@@ -77,6 +78,5 @@ def max_num(list):
     return max
 
 
-max_num(Item_List)
-
-print(Item_List)
+print("-----------------------------------")
+print("Best Profit: %s" % (max_num(Item_List)))

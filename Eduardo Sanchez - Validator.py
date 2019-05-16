@@ -5,7 +5,7 @@
 # Add all the numbers together
 # The check digit (the last number of the card) is the amount that you would need to add to get a multiple of 10
 
-Taken_out_word = []
+Taken_out_num = []
 
 
 def v(num: str):
@@ -14,35 +14,34 @@ def v(num: str):
         return False
     new_list = take_last_digit(num)
     reverse_it(new_list)
-    print(Taken_out_word)
     multiply_odds(new_list)
 
 
-def has_16_digits(num: str):
+def has_16_digits(num: str):                    # Works
     if len(num) == 16:
         print("16 = Y")
         return True
 
 
-def take_last_digit(num: str):
+def take_last_digit(num: str):                  # Works
     list_num = list(num)
-    Taken_out_word.append(list_num[15])
+    Taken_out_num.append(list_num[15])
     for index in range(len(list_num)):
         list_num[index] = int(list_num[index])
     list_num.pop(15)
-    print("Last digit = Y")
     print(list_num)
+    print("Last digit = Y")
     return list_num
 
 
-def reverse_it(list_num: str):
+def reverse_it(list_num: str):                  # Works
     list_num = (list_num[::-1])
     print(list_num)
     print("Reversing = Y")
 
 
 def multiply_odds(list_num: str):
-    odd_num = divisible_by_1(list_num) and divisible_by_3(list_num)
+    odd_num = div_by_2(list_num)
     new_num = odd_num * 2
     if new_num > 9:
         odd_num -= 9
@@ -51,14 +50,8 @@ def multiply_odds(list_num: str):
     print(odd_num)
 
 
-def divisible_by_1(list_num: str):
-    if list_num % 1 == 0:
-        return True
-    return False
-
-
-def divisible_by_3(list_num: str):
-    if list_num % 3 == 0:
+def div_by_2(list_num: str):
+    if list_num % 2 == 0:
         return True
     return False
 
