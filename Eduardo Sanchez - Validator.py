@@ -14,13 +14,17 @@ def v(num: str):
         return False
     new_list = take_last_digit(num)
     reverse_it(new_list)
-    multiply_odds(new_list)
+    # multiply_odds(new_list)
 
 
 def has_16_digits(num: str):                    # Works
     if len(num) == 16:
-        print("16 = Y")
+        print("1. Num Is 16 Digits.")
+        print("------------------------------")
         return True
+    else:
+        print("ERROR. Num Is NOT 16 Digits.")
+        print("------------------------------")
 
 
 def take_last_digit(num: str):                  # Works
@@ -30,24 +34,28 @@ def take_last_digit(num: str):                  # Works
         list_num[index] = int(list_num[index])
     list_num.pop(15)
     print(list_num)
-    print("Last digit = Y")
+    print("2. Last Number Taken Out.")
+    print("------------------------------")
     return list_num
 
 
 def reverse_it(list_num: str):                  # Works
     list_num = (list_num[::-1])
     print(list_num)
-    print("Reversing = Y")
+    print("3. Number Is Reversed.")
+    print("------------------------------")
+    return list_num
 
 
-def multiply_odds(list_num: str):
-    odd_num = div_by_2(list_num)
-    new_num = odd_num * 2
-    if new_num > 9:
-        odd_num -= 9
-    else:
-        pass
-    print(odd_num)
+# def multiply_odds(new_num: str):
+#     if not div_by_2(new_num):
+#         odd_num = new_num * 2
+#         if odd_num > 9:
+#             odd_num -= 9
+#         else:
+#             pass
+#             print(odd_num)
+#             return odd_num
 
 
 def div_by_2(list_num: str):
@@ -55,8 +63,6 @@ def div_by_2(list_num: str):
         return True
     return False
 
-
-print(v("5431709304959590"))
 
 # pre_odd_num = int(list_num)
 #      if pre_odd_num == [1, 3, 5, 7, 9]:
@@ -67,3 +73,6 @@ print(v("5431709304959590"))
 #              return list_num
 #      else:
 #          pass
+
+
+print(v("5431709304959590"))
