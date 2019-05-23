@@ -25,57 +25,70 @@ class Player(object):
 
     def take_damage(self, damage: int):
         if self.shield.defense > damage:
+            print("\n")
             print("But no damage is done because of armor overpowering the weak weapon.")
         elif self.health <= 0:
+            print("\n")
             print("You have died")
             return
         else:
             self.health -= damage - self.shield.defense
+            print("\n")
             print("%s has %d health left." % (self.name, self.health))
 
     def attack(self, target):
+        print("\n")
         print("%s attacks %s for %d damage." % (self.name, target.name, self.weapon.damage))
         target.take_damage(self.weapon.damage)
 
     def drink_life_potion(self):
         if self.shield <= 100:
+            print("\n")
             print("You are full")
             pass
-
         elif self.health <= 100:
+            print("\n")
             print("You are full")
             pass
         else:
             if self.lamount <= 0:
+                print("\n")
                 print("You have no more life potions")
             else:
                 self.lamount -= 1
                 self.shield += 50
                 self.health += 50
+                print("\n")
                 print("---------------------------")
                 print("You drink a life potion and feel revived.")
 
     def drink_shield_potion(self):
         if self.shield <= 100:
+            print("\n")
             print("You are full")
         else:
             if self.samount <= 0:
+                print("\n")
                 print("You have no more shield potions")
             else:
                 self.samount -= 1
                 self.shield += 50
+                print("\n")
                 print("---------------------------")
                 print("You drink a defense potion and feel protected.")
 
     def drink_health_potion(self):
         if self.health <= 100:
+            print("\n")
             print("You are full")
         else:
             if self.hamount <= 0:
+                print("\n")
                 print("You have no more health potions")
             else:
                 self.hamount -= 1
                 self.health += 50
+                print("\n")
                 print("---------------------------")
                 print("You drink a health potion and feel regenerated.")
 
@@ -169,10 +182,12 @@ class HealthPotion(Potion):
 
     def drink_health_potion(self):
         if self.amount <= 0:
+            print("\n")
             print("You have no more health potions")
         else:
             self.amount -= 1
             self.heal += 50
+            print("\n")
             print("You drink a health potion and feel regenerated.")
 
 
@@ -182,10 +197,12 @@ class ShieldPotion(Potion):
 
     def drink_shield_potion(self):
         if self.amount <= 0:
+            print("\n")
             print("You have no more shield potions")
         else:
             self.amount -= 1
             self.shield += 50
+            print("\n")
             print("You drink a defense potion and feel protected.")
 
 
@@ -195,11 +212,13 @@ class LifePotion(Potion):
 
     def drink_life_potion(self):
         if self.amount <= 0:
+            print("\n")
             print("You have no more life potions")
         else:
             self.amount -= 1
             self.shield += 50
             self.heal += 50
+            print("\n")
             print("You drink a life potion and feel revived.")
 
 
@@ -263,15 +282,19 @@ class Enemy(object):
 
     def take_damage(self, damage: int):
         if self.armor.defense > damage:
+            print("\n")
             print("But no damage is done because of armor overpowering the weak weapon.")
         elif self.health <= 0:
+            print("\n")
             print("%s boi died" % self.name)
             return
         else:
             self.health -= damage - self.armor.defense
+            print("\n")
             print("%s has %d health left." % (self.name, self.health))
 
     def attack(self, target):
+        print("\n")
         print("%s attack %s for %d damage." % (self.name, target.name, self.weapon.damage))
         target.take_damage(self.weapon.damage)
 
@@ -390,6 +413,9 @@ attack = ['attack', 'hit', 'slash']
 
 player = Player(YOUR_CELL, 100, 0, "You", Fists(), 3, 3, 3)
 
+print("\n" * 50)
+print("Type 'Commands' for a list of available commands.")
+
 while playing:
     print("---------------------------")
     print(player.current_location.name)
@@ -413,6 +439,7 @@ while playing:
         playing = False
 
     elif command.lower() in ['commands']:
+        print("\n")
         print("---------------------------")
         print("Commands:")
         print("Moving= north, east, south, west")
@@ -424,51 +451,58 @@ while playing:
             next_room = player.find_next_room(command)
             player.move(next_room)
         except KeyError:
+            print("\n")
             print("I can't go that way")
 
     elif command.lower() in ['drink life potion']:
         try:
             player.drink_life_potion()
         except KeyError:
+            print("\n")
             print("Can't do that")
 
     elif command.lower() in ['drink health potion']:
         try:
             player.drink_health_potion()
         except KeyError:
+            print("\n")
             print("Can't do that")
 
     elif command.lower() in ['drink shield potion']:
         try:
             player.drink_shield_potion()
         except KeyError:
+            print("\n")
             print("Can't do that")
 
     elif command.lower() in attack:
         player.attack(player.current_location.enemy)
+        print("\n")
         print("You hit %s for %s damage" % player.current_location.enemy, player.weapon.damage)
 
     elif command.lower() in inventory:
+        print("\n")
         print("---------------------------")
         print("Your inventory:")
         print(list(player.inventory))
-        print("---------------------------")
 
     elif command.lower() in pick_up:
         if player.current_location.items is None:
+            print("\n")
             print("---------------------------")
             print("There is nothing to pick up here.")
-            print("---------------------------")
             pass
         else:
+            print("\n")
             print("---------------------------")
             print("You picked up %s" % player.current_location.items.name)
             player.inventory.append(player.current_location.items.name)
             print(list(player.inventory))
-            print("---------------------------")
+            # if player.current_location.items == Weapon:
+            #     player.weapon = player.current_location.items
             player.current_location.items = None
-
     else:
+        print("\n")
         print("Command Not Found")
 
 '''
